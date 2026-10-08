@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>AI for Good</title>
+<meta name="description" content="English summary of the assessment and proposals of Iceland&#x27;s task force on the government&#x27;s approach to AI. Iceland as a model for using AI for good, for all of society.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="AI for Good">
+<meta property="og:description" content="English summary of the assessment and proposals of Iceland&#x27;s task force on the government&#x27;s approach to AI. Iceland as a model for using AI for good, for all of society.">
+<meta property="og:image" content="https://gervigreind-til-gods.github.io/images/deiling.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI for Good: cover of the report, Icelandic mountains">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://gervigreind-til-gods.github.io/en/">
+<link rel="canonical" href="https://gervigreind-til-gods.github.io/en/">
+<link rel="alternate" hreflang="is" href="https://gervigreind-til-gods.github.io/">
+<link rel="alternate" hreflang="en" href="https://gervigreind-til-gods.github.io/en/">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="../images/favicon-64.png">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<link rel="preload" href="../fonts/open-sans-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  /* Open Sans (SIL Open Font License 1.1), breytileg þyngd 400-800, hýst með vefnum svo engin beiðni fari til Google. Sótt af fonts.googleapis.com 2026-10-06. */
+  @font-face { font-family: 'Open Sans'; font-style: italic; font-weight: 400 800; font-stretch: 100%; font-display: swap; src: url(../fonts/open-sans-italic-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: 'Open Sans'; font-style: italic; font-weight: 400 800; font-stretch: 100%; font-display: swap; src: url(../fonts/open-sans-italic-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400 800; font-stretch: 100%; font-display: swap; src: url(../fonts/open-sans-normal-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400 800; font-stretch: 100%; font-display: swap; src: url(../fonts/open-sans-normal-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  /* Palette: Tengjum ríkið (cream, navy, moss) + the flag colours from Halldór Fannar's slide. */
+  :root {
+    --page:      #FAF9F6;
+    --paper:     #F4F1EA;
+    --ink:       #10243E;
+    --ink-2:     #4A5668;
+    --ink-3:     #666B74;   /* var #8A8F98; dekkt fyrir litaskil 4,5:1 (aðgengismál HG 2026-10-07) */
+    --rule:      #D8D3C4;
+    --accent:    #1B4F8A;
+    --flag-blue: #003897;
+    --flag-red:  #D72828;
+    --wash:      #E7ECF3;
+    --moss:      #8A8560;
+    --font: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 28px; }
+  body { margin: 0; background: var(--page); color: var(--ink); font-family: var(--font);
+         font-size: 17px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); }
+
+  /* ─── Floating controls (pattern from the Betri web edition): "next" and "read more"
+         always visible bottom-right; back + contents appear on hover in the bottom-left corner. ─── */
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+  .ctl { position: fixed; bottom: 22px; z-index: 30; display: flex; align-items: center; gap: 12px; }
+  .ctl-right { right: 22px; }
+  .ctl-center { left: 50%; transform: translateX(-50%); bottom: 18px; }
+  .ctl-center .pill { height: 40px; font-size: 13px; opacity: .92; }
+  /* back, contents and the count sit next to "next" and appear when the pointer nears the cluster (Halldór, 22.9.) */
+  .ctl-right .quiet { opacity: 0; transition: opacity .25s ease; }
+  .hover-zone { position: fixed; right: 0; bottom: 0; width: 420px; height: 150px; z-index: 29; }
+  .hover-zone:hover ~ .ctl-right .quiet, .ctl-right:hover .quiet, .ctl-right:focus-within .quiet { opacity: 1; }
+  .ctl button, .ctl a { font: 600 14px var(--font); color: var(--flag-blue); background: #fff; border: 2px solid var(--flag-blue);
+         height: 48px; min-width: 48px; border-radius: 24px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+         text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,.18); transition: background .2s, color .2s, transform .2s, opacity .2s; }
+  .ctl .round { font-size: 21px; padding: 0; }
+  .ctl .pill { padding: 0 20px; letter-spacing: .02em; }
+  .ctl button:hover, .ctl a:hover { background: var(--flag-blue); color: #fff; transform: scale(1.06); }
+  .ctl button:disabled { opacity: .3; cursor: default; transform: none; background: #fff; color: var(--flag-blue); }
+  .ctl-right > #btn-next { opacity: .88; } .ctl-right > #btn-next:hover { opacity: 1; }
+  .ctl .count { font-size: 13px; font-weight: 600; color: var(--flag-blue); background: #fff; border-radius: 12px; padding: 3px 10px;
+         font-variant-numeric: tabular-nums; box-shadow: 0 2px 8px rgba(0,0,0,.12); }
+  @media (hover: none) { .ctl-right .quiet { opacity: .85; } }
+
+  /* ─── Pages ─── */
+  .page { display: none; }
+  .page.is-active { display: block; }
+  .stage-wrap { position: relative; width: 100%; overflow: hidden; }
+  .stage { width: 1600px; height: 900px; transform-origin: 0 0; position: absolute; left: 0; top: 0; overflow: hidden; background: var(--paper); }
+  /* ─── Slides (1600 × 900 design canvas, scaled to fit) ─── */
+  .slide { position: absolute; inset: 0; display: flex; flex-direction: column; color: var(--ink); }
+  .flag { position: absolute; left: 0; top: 0; bottom: 0; width: 38px; z-index: 2;
+          /* Bleksrönd (ákvörðun HG 2026-09-30, í stað mórauðu randarinnar frá 29.9.): blekið + áherslublátt kantband, mörkin lítillega ójöfn */
+          background: #10243E url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 38 1200%22 preserveAspectRatio=%22none%22%3E%3Cpolygon fill=%22%2310243E%22 points=%22-0.20,0 -0.20,20 -0.20,40 -0.20,60 -0.20,80 -0.20,100 -0.20,120 -0.20,140 -0.20,160 -0.20,180 -0.20,200 -0.20,220 -0.20,240 -0.20,260 -0.20,280 -0.20,300 -0.20,320 -0.20,340 -0.20,360 -0.20,380 -0.20,400 -0.20,420 -0.20,440 -0.20,460 -0.20,480 -0.20,500 -0.20,520 -0.20,540 -0.20,560 -0.20,580 -0.20,600 -0.20,620 -0.20,640 -0.20,660 -0.20,680 -0.20,700 -0.20,720 -0.20,740 -0.20,760 -0.20,780 -0.20,800 -0.20,820 -0.20,840 -0.20,860 -0.20,880 -0.20,900 -0.20,920 -0.20,940 -0.20,960 -0.20,980 -0.20,1000 -0.20,1020 -0.20,1040 -0.20,1060 -0.20,1080 -0.20,1100 -0.20,1120 -0.20,1140 -0.20,1160 -0.20,1180 -0.20,1200 27.09,1200 26.71,1180 26.27,1160 25.91,1140 25.74,1120 25.73,1100 25.78,1080 25.76,1060 25.62,1040 25.45,1020 25.37,1000 25.47,980 25.73,960 26.02,940 26.19,920 26.17,900 26.00,880 25.81,860 25.72,840 25.76,820 25.86,800 25.88,780 25.76,760 25.53,740 25.33,720 25.30,700 25.49,680 25.83,660 26.17,640 26.40,620 26.50,600 26.55,580 26.69,560 26.95,540 27.30,520 27.58,500 27.67,480 27.54,460 27.29,440 27.07,420 26.98,400 27.02,380 27.09,360 27.07,340 26.92,320 26.70,300 26.55,280 26.58,260 26.79,240 27.07,220 27.26,200 27.27,180 27.13,160 26.94,140 26.83,120 26.83,100 26.86,80 26.80,60 26.56,40 26.15,20 25.72,0%22/%3E%3Cpolygon fill=%22%231B4F8A%22 points=%2225.12,0 25.55,20 25.96,40 26.20,60 26.26,80 26.23,100 26.23,120 26.34,140 26.53,160 26.67,180 26.66,200 26.47,220 26.19,240 25.98,260 25.95,280 26.10,300 26.32,320 26.47,340 26.49,360 26.42,380 26.38,400 26.47,420 26.69,440 26.94,460 27.07,480 26.98,500 26.70,520 26.35,540 26.09,560 25.95,580 25.90,600 25.80,620 25.57,640 25.23,660 24.89,680 24.70,700 24.73,720 24.93,740 25.16,760 25.28,780 25.26,800 25.16,820 25.12,840 25.21,860 25.40,880 25.57,900 25.59,920 25.42,940 25.13,960 24.87,980 24.77,1000 24.85,1020 25.02,1040 25.16,1060 25.18,1080 25.13,1100 25.14,1120 25.31,1140 25.67,1160 26.11,1180 26.49,1200 38.40,1200 38.40,1180 38.40,1160 38.40,1140 38.40,1120 38.40,1100 38.40,1080 38.40,1060 38.40,1040 38.40,1020 38.40,1000 38.40,980 38.40,960 38.40,940 38.40,920 38.40,900 38.40,880 38.40,860 38.40,840 38.40,820 38.40,800 38.40,780 38.40,760 38.40,740 38.40,720 38.40,700 38.40,680 38.40,660 38.40,640 38.40,620 38.40,600 38.40,580 38.40,560 38.40,540 38.40,520 38.40,500 38.40,480 38.40,460 38.40,440 38.40,420 38.40,400 38.40,380 38.40,360 38.40,340 38.40,320 38.40,300 38.40,280 38.40,260 38.40,240 38.40,220 38.40,200 38.40,180 38.40,160 38.40,140 38.40,120 38.40,100 38.40,80 38.40,60 38.40,40 38.40,20 38.40,0%22/%3E%3C/svg%3E") left top / 100% 100% no-repeat; }
+  .slide--std { padding: 62px 84px 0 122px; }
+  .shead .kicker, .cover-text .kicker, .overlay .kicker { font-size: 17px; font-weight: 700; letter-spacing: .14em;
+          text-transform: uppercase; color: var(--flag-blue); display: flex; align-items: center; gap: 14px; }
+  .badge { font-size: 13px; letter-spacing: .1em; padding: 3px 10px; border-radius: 4px; background: var(--flag-red); color: #fff; }
+  .badge--soft { background: none; color: var(--ink-3); border: 1px solid var(--rule); }
+  .shead h1 { font-size: 60px; line-height: 1.1; font-weight: 800; letter-spacing: -.025em; margin: 10px 0 0; }
+  .banner { margin-top: 26px; background: var(--wash); border-radius: 10px; padding: 20px 30px; display: flex; gap: 34px; align-items: baseline; }
+  .banner .label { flex: none; font-size: 15px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--flag-blue); }
+  .banner p { margin: 0; font-size: 25px; line-height: 1.35; font-weight: 600; }
+  .sbody { flex: 1; min-height: 0; margin-top: 34px; overflow: hidden; font-size: calc(21px * var(--k, 1)); line-height: 1.42; }
+  .cols { display: grid; gap: 0; align-content: start; }
+  .cols-1 { grid-template-columns: 1fr; } .cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .cols-3 { grid-template-columns: repeat(3, 1fr); } .cols-4 { grid-template-columns: repeat(4, 1fr); }
+  /* each column spans a heading row and a body row of the parent grid, so the rules line up across columns */
+  .col { display: grid; grid-template-rows: subgrid; grid-row: span 2; padding: 0 1.6em; border-left: 1px solid var(--rule); min-width: 0; }
+  .col--first { padding-left: 0; border-left: 0; }
+  /* súlurit í dálki (bars í slides.json): fyrsta súlan dökkblá, hinar ljósari (HG 2026-10-05) */
+  .bars { display: grid; gap: .55em; margin-top: .1em; }
+  .bar-head { display: flex; align-items: center; gap: .5em; }
+  .bar-num { font-size: 1.45em; font-weight: 800; line-height: 1; color: var(--ink); letter-spacing: -.02em; font-variant-numeric: tabular-nums; min-width: 2.1em; }
+  .bar-lbl { font-size: .76em; line-height: 1.2; color: var(--ink-2); }
+  .bar-track { height: .45em; margin-top: .25em; background: rgba(16,36,62,.08); border-radius: 3px; overflow: hidden; }
+  .bar-fill { height: 100%; background: #9DB4CE; border-radius: 3px; }
+  .bar--lead .bar-fill { background: var(--flag-blue); }
+  .colbody .bar-note { margin: .8em 0 0; font-size: .82em; line-height: 1.3; color: var(--ink-2); }
+  .col--tall { grid-column: 3; grid-row: 1 / span 4; } .col--tall .colbody { grid-row: 2 / span 3; }   /* tall_col í slides.json (HG 2026-10-05) */
+  .col--note .colbody p { background: #FBEFC9; color: #6B5310; border-radius: 4px; padding: .2em .4em; margin-left: -.4em; }
+  .colhead { align-self: end; font-size: 1.24em; font-weight: 700; line-height: 1.2; color: var(--flag-blue); letter-spacing: -.012em; }
+  .colhead span { display: block; min-height: .2em; }
+  .colhead::after { content: ""; display: block; width: 100%; height: .15em; background: var(--flag-blue); margin-top: .5em; }
+  /* Brúarglæra („Um tillögurnar“ o.þ.h.): fáir punktar, venjuleg leturstærð, þrengri og hljóðlátari svo hún lesist sem brú en ekki aðalglæra */
+  .slide--chart { padding-top: 22px; padding-right: 40px; }   /* no title: the chart gets the whole slide */
+  .slide--chart .sbody { display: flex; align-items: center; justify-content: center; margin-top: 0; padding-bottom: 12px; }
+  .slide--chart figure { margin: 0; height: 100%; display: flex; justify-content: center; }
+  .slide--chart figure img { height: 100%; width: auto; max-width: 100%; object-fit: contain; cursor: zoom-in; }
+  .slide--bridge .sbody { max-width: 56em; margin-top: 56px; }
+  .slide--bridge .colhead { font-size: 1.12em; }
+  .slide--bridge .colhead::after { height: .1em; }
+  .slide--bridge .col p { color: var(--ink-2); }
+  .backdrop { position: absolute; left: 0; right: 0; bottom: -200px; z-index: 0; opacity: .2; pointer-events: none; }   /* dauf fjallsbrún, að mestu falin bak við blekröndina */
+  .backdrop img { width: 100%; display: block; }
+  .backdrop ~ .band, .slide:has(.backdrop) .shead, .slide:has(.backdrop) .sbody { position: relative; z-index: 1; }
+  .sky { position: absolute; top: 20px; right: 67px; width: 44%; max-width: 560px; opacity: .6; z-index: 0; pointer-events: none; } .sky img { width: 100%; display: block; }
+  .slide:has(.sky) .shead, .slide:has(.sky) .banner, .slide:has(.sky) .sbody { position: relative; z-index: 1; }
+  .bgart { position: relative; height: 0; z-index: 0; pointer-events: none; }   /* rétt á undan borðanum: myndin stendur á efri brún hans */
+  .bgart img { position: absolute; right: -84px; bottom: -26px; width: 900px; max-width: none; opacity: .12; }
+  .slide:has(.bgart) .shead, .slide:has(.bgart) .banner, .slide:has(.bgart) .sbody { position: relative; z-index: 1; }
+  .colbody { padding: .9em 0 1.7em; }
+  .card .tag { font-size: .62em; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--flag-blue); }
+  .col h3 { font-size: 1.12em; line-height: 1.22; font-weight: 700; margin: 0 0 .5em; letter-spacing: -.01em; }
+  .col p { margin: 0 0 .6em; color: var(--ink-2); }
+  .col ul, .col ol { margin: 0; padding-left: 1.05em; color: var(--ink-2); }
+  .col li { margin: 0 0 .5em; } .col li b { color: var(--ink); font-weight: 700; }
+  .col li ul { margin-top: .3em; font-size: .92em; }
+  .col .more { margin-top: .9em; font-size: .78em; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+  .col .more a { margin-right: 1em; text-decoration: none; border-bottom: 2px solid var(--wash); }
+  .points { list-style: none; margin: 0; padding: 0; }
+  .points-2 { columns: 2; column-gap: 3.2em; }
+  .points > li { break-inside: avoid; padding: .7em 0 .75em; border-top: 1px solid var(--rule); color: var(--ink-2); }
+  .points > li b { color: var(--ink); } .points > li ul { margin: .35em 0 0; padding-left: 1.1em; font-size: .9em; }
+  .points .rest::before, .col .rest::before { content: "· "; color: var(--ink-3); }
+  .smallnote { margin: 1em 0 0; font-size: .78em; color: var(--ink-3); }
+  .empty { color: var(--ink-3); font-style: italic; padding-top: 1em; }
+  .ednote { background: #FBEFC9; border-radius: 3px; padding: 0 .25em; color: #6B5310; }
+  .band { flex: none; position: relative; z-index: 3; margin: 26px -84px 0 -122px; padding: 24px var(--ctlpad, 160px) var(--ctlbottom, 30px) 122px; background: var(--ink); color: #fff; min-height: 116px; }
+  .band .footart { position: absolute; bottom: 100%; left: 100px; width: 25%; max-width: 330px; pointer-events: none; } .band .footart img { width: 100%; display: block; }   /* footart í slides.json */
+  .band--slim { min-height: var(--slimh, 92px); padding: 0; }   /* always tall enough to seat the floating buttons */
+  .band .eyebrow { display: block; font-size: 13px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #8FB3E8; margin-bottom: 6px; }
+  .band p { margin: 0; font-size: 23px; line-height: 1.35; font-weight: 700; max-width: 1240px; }
+  .band a, .band .xref { color: #fff; }
+
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; font-size: 21px; }
+  .card { display: grid; grid-template-columns: auto 1fr; column-gap: 18px; align-items: baseline; text-decoration: none; color: var(--ink);
+          background: var(--wash); padding: 16px 22px 15px; border-top: 5px solid var(--flag-blue); }
+  .card:hover { background: #DCE4EF; }
+  .cards--quiet { margin-top: 12px; }
+  .slide--overview .sbody { margin-top: 26px; padding-bottom: 20px; }
+  .slide--overview .cards { height: 100%; grid-template-rows: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .omap { display: flex; flex-direction: column; gap: 14px; height: 100%; }
+  .ocols { flex: 1 1 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px 22px; min-height: 0; }
+  .ocol { display: flex; flex-direction: column; gap: 8px; min-height: 0; background: var(--wash); border-top: 6px solid var(--flag-blue); padding: 10px 16px 14px; }
+  .ocol--1 { border-top-color: var(--flag-red); } .ocol--3 { border-top-color: var(--moss); }
+  .omap .ocol .card { background: none; border-top: 1px solid rgba(16,36,62,.16); }
+  .omap .obase-cards .card { background: none; border-top: 0; }
+  .slide--overview .omap .card { flex: none; padding: 9px 0 3px; column-gap: 14px; } .slide--overview .omap .card .num { font-size: 26px; line-height: 1; } .slide--overview .omap .card h3 { font-size: 21px; line-height: 1.2; margin: 1px 0 0; }
+  .olabel { font-size: 14px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--flag-blue); }
+  .otitle { font-size: 27px; line-height: 1.15; font-weight: 800; letter-spacing: -.01em; min-height: 2.3em; margin: -4px 0 4px; }
+  .ocol--1 .olabel { color: var(--flag-red); } .ocol--3 .olabel { color: var(--moss); } .obase .olabel { color: var(--ink-3); }
+  .obase { flex: none; background: var(--paper); border: 1px solid var(--rule); padding: 10px 16px 12px; }
+  .slide--overview .omap .obar { display: block; margin-top: 16px; text-align: center; background: none; border: 0; border-top: 1px solid var(--ink-3); padding: 16px 16px 6px; }
+  .slide--overview .omap .obar h3 { grid-column: auto; margin: 0; line-height: 1.15; }
+  .obase-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px 22px; margin-top: 6px; }
+  .omap .card { grid-template-columns: auto 1fr; align-items: start; }
+  .slide--overview .card { align-content: center; padding: 10px 26px; overflow: hidden; }
+  /* Yfirlitsglæra Viðfangsefnanna: þrír dálkar, hver kafli í sínum kassa sem fyllir hæð dálksins (HG 2026-10-05) */
+  .vgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; height: 100%; }
+  .vcol { display: grid; grid-template-rows: auto repeat(5, minmax(0, 1fr)); gap: 10px; min-height: 0; }   /* allir kassar jafnstórir (HG 2026-10-05) */
+  .vhead { font-size: 15px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--vc); padding-bottom: 2px; }
+  .vcol--1 { --vc: var(--flag-red); } .vcol--2 { --vc: var(--flag-blue); } .vcol--3 { --vc: var(--moss); }
+  .vcard { min-height: 0; display: flex; align-items: center; gap: 16px; padding: 6px 20px; background: var(--wash); border-left: 5px solid var(--vc);
+           color: var(--ink); text-decoration: none; transition: background .2s; }
+  .vcard:hover { background: #DCE4EE; }
+  .vcard .num { font-size: 30px; font-weight: 800; line-height: 1; color: var(--vc); min-width: 1.5em; font-variant-numeric: tabular-nums; }
+  .vcard h3 { margin: 0; font-size: 21px; line-height: 1.2; font-weight: 700; }
+  /* Bygging (HG 2026-10-05): útkomurnar þrjár sem súlur, umgjörðin sem undirstaða þvert undir, stofnanafyrirkomulagið sem sökkull */
+  .slide--overview .omap { gap: 0; }
+  .slide--overview .ocols { gap: 0 30px; padding: 0 18px; }
+  .slide--overview .ocol { background: none; padding: 12px 16px 18px; border-top-width: 5px;
+                           box-shadow: inset 1px 0 0 rgba(16,36,62,.13), inset -1px 0 0 rgba(16,36,62,.13); }
+  .slide--overview .omap .ocol .card { border-top: 1px solid rgba(16,36,62,.13); }
+  .slide--overview .omap .card .num { font-size: 30px; font-weight: 800; }
+  .slide--overview .obase { background: var(--wash); border: 0; padding: 14px 34px 0; }
+  .slide--overview .obase .olabel { color: var(--flag-blue); }
+  .slide--overview .omap .obar { margin: 12px -34px 0; background: var(--ink); border: 0; padding: 11px 16px; }
+  .slide--overview .omap .obar h3 { color: #fff; font-size: 17px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+  .slide--overview .card .num { font-size: 36px; }
+  .slide--overview .card .tag { font-size: 14px; }
+  .slide--overview .card h3 { font-size: 25px; margin: 0; }
+  .card--quiet { display: block; background: none; border-top: 2px solid var(--rule); padding: 14px 4px 18px; }
+  .card--quiet:hover { background: none; }
+  .card--quiet h3 { font-size: 25px; font-weight: 600; color: var(--ink-2); }
+  /* „ekki virk“ viðfangsefni: gráir kassar með einni línu (HG 2026-10-05) */
+  .slide--off .sbody { margin-top: 24px; }
+  .cards--quiet:has(.card--off) { grid-template-rows: repeat(3, minmax(0, 1fr)); gap: 12px; height: 100%; margin-top: 0; }
+  .card--off { background: #E9E7E1; border-top: 0; border-left: 4px solid #B8B4AA; padding: 12px 18px; display: flex; flex-direction: column; justify-content: flex-start; }   /* efnið efst í kassanum (HG 2026-10-05) */
+  .card--off:hover { background: #E9E7E1; }
+  .card--off h3 { font-size: 19px; line-height: 1.2; font-weight: 700; color: #5A6270; margin: 0; }
+  .card--off p { font-size: 15px; line-height: 1.3; color: #6E737C; margin: 4px 0 0; }
+  .card .num { font-size: 30px; color: var(--flag-blue); grid-row: span 2; }
+  .card h3 { margin: 2px 0 0; font-size: 24px; line-height: 1.2; grid-column: 2; }
+  .card p { margin: 6px 0 0; font-size: 15px; color: var(--ink-2); grid-column: 2; }
+  .card.o-1 { border-top-color: var(--flag-red); } .card.o-1 .tag, .card.o-1 .num { color: var(--flag-red); }
+  .card.o-3 { border-top-color: var(--moss); } .card.o-3 .tag, .card.o-3 .num { color: var(--moss); }
+  .card.o-u { border-top-color: var(--ink-3); } .card.o-u .tag, .card.o-u .num { color: var(--ink-3); }
+
+  .slide--people .sbody { display: flex; align-items: center; justify-content: center; margin-top: 0; padding: 12px 0; }   /* rows centred between title and band */
+  .people { list-style: none; display: grid; grid-template-columns: repeat(6, 165px); justify-content: center; gap: 26px 30px; margin: 0; padding: 0; }
+  .people li { grid-column: span 2; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; font-size: 21px; }
+  .people li:nth-child(4) { grid-column: 2 / span 2; }   /* 3 + 2, the second row centred */
+  .people img, .people .ph { width: 196px; height: 196px; border-radius: 50%; object-fit: cover; object-position: 50% 25%; margin-bottom: 12px;
+                             filter: grayscale(1) contrast(1.05); background: var(--wash); box-shadow: 0 0 0 4px var(--paper), 0 0 0 6px var(--flag-blue); }
+  .people b { font-size: 21px; display: inline-flex; align-items: center; gap: 8px; }
+  .people b a { display: inline-flex; color: var(--flag-blue); }
+  .people b a svg { width: 18px; height: 18px; display: block; }
+  .people b a:hover { color: var(--accent); }
+  .people span { color: var(--ink-2); font-size: 16px; } .people span a { color: inherit; }
+
+  /* Hlutverkið (fremst, ákvörðun HG 2026-09-30): texti til vinstri (lína + tilvitnunin úr skipunarbréfinu), andlitin fimm í 3+2 til hægri, fóturinn */
+  .slide--umbod .sbody { display: grid; grid-template-columns: 1fr auto; column-gap: 56px; align-items: start; margin-top: 14px; overflow: visible; }
+  .slide--umbod .mtext { display: flex; flex-direction: column; gap: 26px; min-width: 0; }
+  .slide--umbod .mlead { margin: 0; font-size: 22px; line-height: 1.4; color: var(--ink-2); }
+  .mandate { margin: 0; padding: 0 0 0 30px; border-left: 8px solid var(--flag-blue); }
+  .slide--umbod .mandate { margin-top: 26px; }
+  .mandate .mlabel { font-size: 15px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--flag-blue); margin-bottom: 8px; }
+  .mandate p { margin: 0; font-size: 31px; line-height: 1.3; font-weight: 700; letter-spacing: -.012em; }
+  .people--grid { grid-template-columns: repeat(6, 118px); gap: 16px 12px; margin-top: 4px; }   /* 3 + 2, sömu reglur og viðaukinn, minni myndir */
+  .people--grid li { font-size: 17px; }
+  .people--grid img { width: 150px; height: 150px; margin-bottom: 8px; }
+  .people--grid b { font-size: 16px; line-height: 1.15; display: inline; }   /* táknið fylgir síðasta orði nafnsins þegar það brotnar */
+  .people--grid b a { display: inline-flex; vertical-align: -3px; margin-left: 6px; } .people--grid span { font-size: 15px; }
+
+  .slide--cover, .slide--divider { background: var(--page); }
+  .cover-text { padding: 150px 120px 0 160px; position: relative; z-index: 1; }
+  .cover-text h1 { font-size: 112px; line-height: 1; font-weight: 800; letter-spacing: -.04em; margin: 28px 0 0; }
+  .slide--divider .cover-text h1 { font-size: 84px; }
+  .cover-text .sub { font-size: 32px; line-height: 1.35; color: var(--ink-2); max-width: 1000px; margin: 30px 0 0; }
+  .cover-text .authors { font-size: 20px; color: var(--ink-3); margin: 44px 0 0; }
+  .horizon { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; display: block; }
+
+  /* ─── The four opening slides: bespoke layouts, text still straight from the doc ─── */
+  .cover-text .authors span + span::before { content: "·"; margin: 0 .7em; color: var(--rule); }
+  .slide--split { flex-direction: row; background: var(--page); }
+  .split-text { flex: 0 0 47%; padding: 0 70px 60px 150px; display: flex; flex-direction: column; justify-content: center; }
+  .split-text h1 { font-size: 84px; line-height: 1.02; font-weight: 800; letter-spacing: -.035em; margin: 22px 0 34px; }
+  .split-text h1::after { content: ""; display: block; width: 120px; height: 8px; background: var(--flag-blue); margin-top: 34px; }
+  .split-text p { font-size: 29px; line-height: 1.5; color: var(--ink-2); margin: 0 0 .7em; }
+  .split-image { flex: 1; position: relative; }
+  .split-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+  .slide--principles { padding-bottom: 0; }
+  .slide--principles .sbody { position: relative; z-index: 1; margin-bottom: 250px; }
+  .principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.7em 2.6em; }
+  .pr { border-top: .15em solid var(--flag-blue); padding-top: .8em; }
+  .pr h3 { font-size: 1.36em; line-height: 1.18; font-weight: 800; letter-spacing: -.015em; margin: 0 0 .45em; }
+  .pr h3 .not { color: var(--ink-3); font-weight: 600; display: block; }
+  .pr p { margin: 0; color: var(--ink-2); }
+  .horizon-low { position: absolute; left: 0; right: 0; bottom: 0; height: 270px; overflow: hidden; }
+  .horizon-low img { width: 100%; display: block; }
+
+  .shead .ssub { font-size: 25px; color: var(--ink-2); margin: 10px 0 0; }
+  .outcomes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4em; align-items: stretch; }
+  .oc { background: var(--wash); border-top: .3em solid var(--oc); padding: 1.2em 1.4em 1.3em; }
+  .oc.o-1 { --oc: var(--flag-red); } .oc.o-2 { --oc: var(--flag-blue); } .oc.o-3 { --oc: var(--moss); }
+  .oc-label { font-size: .62em; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--oc); }
+  /* litaskil á merkimiðum (aðgengismál HG 2026-10-07): aðeins textinn dekkri, fánarauðið og mosinn óbreytt í flötum og köntum */
+  .oc.o-1 .oc-label, .vcol--1 .vhead, .ocol--1 .olabel { color: #C82222; } .oc.o-3 .oc-label, .vcol--3 .vhead, .ocol--3 .olabel { color: #6F6A45; }
+  .oc h3 { font-size: 1.42em; line-height: 1.15; font-weight: 800; letter-spacing: -.02em; margin: .3em 0 .7em; }
+  .oc ol { list-style: none; counter-reset: step; margin: 0; padding: 0; }
+  .oc li { counter-increment: step; position: relative; padding: .55em 0 .55em 1.9em; border-top: 1px solid rgba(16,36,62,.14); color: var(--ink-2); }
+  .oc li::before { content: counter(step); position: absolute; left: 0; top: .5em; font-weight: 800; color: var(--oc); }
+  /* Áherslulína („ljómi“): valin í slides.json. Hún birtist aðeins sem skref í kynningu (allur skjárinn), ekki utan hennar (ákvörðun HG 2026-10-03).
+     Textinn tekur frá pláss feitletraðrar útgáfu (.kt), svo ekkert annað á glærunni hreyfist þegar kviknar á henni. */
+  .oc.o-1 { --oc-tint: rgba(215,40,40,.13); } .oc.o-2 { --oc-tint: rgba(0,56,151,.13); } .oc.o-3 { --oc-tint: rgba(138,133,96,.26); }
+  .oc li.key { margin: 0 -1.4em; padding-left: 3.3em; padding-right: 1.4em; border-top-color: transparent;
+               background: linear-gradient(rgba(16,36,62,.14), rgba(16,36,62,.14)) 1.4em 0 / calc(100% - 2.8em) 1px no-repeat;
+               transition: background-color .45s ease, box-shadow .45s ease, color .45s ease; }
+  .oc li.key::before { left: 1.4em; }
+  .oc li.key .kt { display: grid; } .oc li.key .kt > span, .oc li.key .kt::after { grid-area: 1 / 1; }
+  .oc li.key .kt::after { content: attr(data-t); font-weight: 700; visibility: hidden; }
+  body.present .oc li.key.is-on { background: var(--oc-tint); box-shadow: inset .3em 0 0 var(--oc); color: var(--ink); font-weight: 700; }
+  body.present .oc li.key.is-on + li { border-top-color: transparent; }   /* línan undir hverfur aðeins þegar kviknað er á ljómanum */
+
+  .slide--image .fill { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .overlay { position: absolute; left: 110px; top: 90px; max-width: 900px; z-index: 1; background: rgba(250,249,246,.93);
+             padding: 44px 52px 40px; border-radius: 12px; }
+  .overlay--low { top: auto; bottom: 90px; }
+  .overlay--mid { top: 44%; transform: translateY(-50%); max-width: 660px; padding: 36px 44px 32px; }   /* clears the summit and the map rock */
+  .overlay h1 { font-size: 72px; line-height: 1.05; font-weight: 800; letter-spacing: -.03em; margin: 14px 0 18px; }
+  .overlay--low h1, .overlay--mid h1 { margin-top: 0; font-size: 56px; }
+  .overlay p { font-size: 26px; line-height: 1.45; margin: 0; color: var(--ink-2); }
+  .closing-row { display: flex; align-items: center; gap: 56px; margin-top: 30px; }   /* QR vinstra megin, PDF-smámyndin hægra megin með tengilinn undir (HG 6.10.) */
+  .closing-row .dl-card { flex: 1; flex-direction: column; align-items: center; gap: 14px; }   /* miðjað í rýminu hægra megin við QR-kóðann */ .closing-row .dl-card img { width: 200px; }
+  .dl-card { display: flex; align-items: center; gap: 18px; text-decoration: none; color: var(--ink); }
+  .dl-card img { width: 110px; box-shadow: 0 1px 3px rgba(16,36,62,.25), 0 10px 26px rgba(16,36,62,.2); }
+  .dl-card span { font-size: 19px; font-weight: 700; color: var(--flag-blue); } .dl-card:hover span { text-decoration: underline; }
+  .qr-ph { flex: none; width: 130px; height: 130px; border: 3px dashed var(--flag-red); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: var(--flag-red); padding: 8px; }
+  .qr-ph span { font-weight: 800; font-size: 18px; } .qr-ph small { font-size: 11px; line-height: 1.25; margin-top: 4px; }
+  .qr { flex: none; display: flex; flex-direction: column; align-items: center; gap: 8px; } .qr img { width: 320px; height: 320px; display: block; border-radius: 6px; } .qr small { font-size: 17px; color: var(--ink-3); }   /* 320 px á 1600 × 900: skannanlegt úr sal (HG 6.10.) */
+  .overlay--mid:has(.qr) { max-width: 860px; }
+
+  /* ─── Long form ─── */
+  .long { max-width: 1080px; margin: 72px auto 0; padding: 0 24px 120px; display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 56px; }
+  .secnav { position: sticky; top: 32px; align-self: start; display: flex; flex-direction: column; gap: 2px; font-size: 14px;
+            border-left: 3px solid var(--flag-blue); padding-left: 16px; }
+  .secnav-title { font-weight: 700; margin-bottom: 8px; line-height: 1.3; }
+  .secnav a { color: var(--ink-2); text-decoration: none; padding: 3px 0; }
+  .secnav a:hover { color: var(--accent); }
+  .prose { max-width: 72ch; }
+  .prose h2 { font-size: 30px; font-weight: 800; letter-spacing: -.02em; line-height: 1.2; margin: 2.2em 0 .6em; padding-top: .7em; border-top: 1px solid var(--rule); }
+  .prose section:first-child h2, .prose .owners + section h2 { margin-top: .4em; border-top: 0; padding-top: 0; }
+  .prose h3 { font-size: 21px; margin: 1.8em 0 .4em; } .prose h4 { font-size: 18px; margin: 1.6em 0 .3em; font-style: normal; }
+  .prose h4 em, .prose h3 em { font-style: normal; }
+  .prose p { margin: 0 0 1em; } .prose li { margin-bottom: .5em; } .prose ul, .prose ol { padding-left: 1.3em; margin: 0 0 1.1em; }
+  .owners { font-size: 14px; color: var(--ink-3); margin: 0 0 1.4em; }
+  .todo { color: var(--ink-3); font-style: italic; font-size: 14px; list-style: none; }
+  .callout { background: var(--wash); border-left: 4px solid var(--flag-blue); border-radius: 0 8px 8px 0; padding: 16px 22px; margin: 1.4em 0; font-weight: 500; }
+  .prop { background: var(--wash); border-left: 4px solid var(--flag-blue); border-radius: 0 8px 8px 0; padding: 16px 22px; margin: 1.2em 0; }
+  .prop p { margin: 0; } .prop p + p, .prop p + ul, .prop p + ol { margin-top: .8em; }   /* númeraðar tillögur í kassa eins og T-tillögurnar (HG 2026-10-05) */
+  .sources ul { list-style: none; padding: 0; font-size: 15px; } .sources li { padding: 8px 0; border-top: 1px solid var(--rule); margin: 0; }
+  .sources a { text-decoration: none; } .sources a:hover { text-decoration: underline; }
+  .sources .src-host { color: var(--ink-3, #6b7280); font-size: .85em; margin-left: .3em; }
+  .pid { font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; margin-right: .3em; white-space: nowrap; }
+  .pid::after { content: " ·"; color: var(--ink-3); font-weight: 400; }
+  ul.props { list-style: none; padding: 0; margin: 0 0 1.4em; }
+  ul.props li { margin: .4em 0; padding-left: 4.2em; text-indent: -4.2em; }
+  ul.props .xref { text-decoration: none; }
+  .xref { text-decoration: none; border-bottom: 1px dotted var(--accent); }
+  .prose figure { margin: 1.2em 0; } .prose figure img { width: 100%; border: 1px solid var(--rule); border-radius: 6px; }
+  .prose figcaption { font-size: 13px; color: var(--ink-3); margin-top: 6px; }
+  .prose :target { animation: flash 1.6s ease-out; } @keyframes flash { from { background: #FBEFC9; } to { background: transparent; } }
+  .pager { max-width: 1080px; margin: 0 auto; padding: 0 24px 80px; display: flex; justify-content: space-between; gap: 16px; }
+  .pager a { text-decoration: none; font-weight: 600; font-size: 15px; }
+
+  /* ─── Contents panel ─── */
+  .toc { position: fixed; inset: 0; z-index: 40; background: var(--page); overflow: auto; display: none; padding: 28px 24px 80px; }
+  .toc.is-open { display: block; }
+  .toc-close { position: fixed; top: 20px; right: 24px; font-size: 26px; background: none; border: 0; color: var(--ink-2); cursor: pointer; }
+  .toc-title { max-width: 900px; margin: 24px auto 0; font-size: 34px; font-weight: 800; letter-spacing: -.02em; }
+  .toc-pdf { max-width: 900px; margin: 36px auto 0; padding-top: 26px; border-top: 1px solid var(--rule); display: flex; gap: 36px; align-items: center; text-decoration: none; color: var(--ink); }
+  .toc-pdf img { width: 220px; box-shadow: 0 1px 3px rgba(16,36,62,.2), 0 8px 24px rgba(16,36,62,.15); }
+  .toc-pdf span { display: flex; flex-direction: column; gap: 2px; } .toc-pdf b { font-size: 22px; } .toc-pdf small { color: var(--ink-2); font-size: 16px; }
+  .toc-pdf em { font-style: normal; font-weight: 700; color: var(--flag-blue); margin-top: 6px; } .toc-pdf:hover em { text-decoration: underline; }
+  .toc-inner { max-width: 900px; margin: 0 auto; columns: 2; column-gap: 56px; }
+  .toc-group { font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--flag-blue); margin: 22px 0 8px; break-after: avoid; }
+  .toc-item { break-inside: avoid; margin-bottom: 8px; }
+  .toc-item > a { display: flex; gap: 12px; text-decoration: none; color: var(--ink); font-weight: 600; }
+  .toc-item > a span { color: var(--ink-3); font-weight: 400; font-variant-numeric: tabular-nums; }
+  .toc-subs { padding-left: 34px; display: flex; flex-wrap: wrap; gap: 2px 12px; }
+  .toc-sub { font-size: 13px; color: var(--ink-2); text-decoration: none; } .toc-sub:hover, .toc-item > a:hover { color: var(--accent); }
+
+  /* ─── Presentation (fullscreen): the slide alone, click to advance ─── */
+  body.present { overflow: hidden; }
+  body.present .long, body.present .pager, body.present #ctl-read { display: none; }
+  body.present .page.is-active { cursor: pointer; }
+
+  @media (max-width: 820px) {
+    .long { grid-template-columns: 1fr; gap: 20px; margin-top: 28px; padding: 0 16px 80px; }
+    .secnav { position: static; flex-direction: row; flex-wrap: wrap; gap: 4px 14px; border-left: 0; padding-left: 0; }
+    .secnav-title { display: none; } .toc-inner { columns: 1; } body { font-size: 16px; }
+  }
+  /* ─── Farsími (HG 2026-10-06): undir 700 px er glæran ekki skölaður 1600 px strigi heldur rennur hún eins og vefsíða.
+     Allt hér er innan þessarar blokkar og layout() skalar ekki á body.mobile, svo útlitið á breiðum skjá er óbreytt. ─── */
+  @media (max-width: 699px) {
+    body.mobile .stage-wrap { overflow: visible; height: auto !important; }
+    body.mobile .stage { position: relative; width: auto !important; height: auto !important; transform: none !important; overflow: visible; }
+    body.mobile .slide { position: relative; inset: auto; }
+    body.mobile .flag { width: 10px; }
+    body.mobile .slide--std { padding: 26px 18px 0 30px; }
+    body.mobile .shead .kicker, body.mobile .cover-text .kicker, body.mobile .overlay .kicker { font-size: 11px; gap: 8px; }
+    body.mobile .shead h1 { font-size: 29px; }
+    body.mobile .shead .ssub { font-size: 17px; }
+    body.mobile .banner { margin-top: 16px; flex-direction: column; gap: 6px; padding: 14px 16px; border-radius: 8px; }
+    body.mobile .banner .label { font-size: 11px; }
+    body.mobile .banner p { font-size: 17px; }
+    body.mobile .sbody { margin-top: 22px; overflow: visible; font-size: 16px; }
+    body.mobile .cols-2, body.mobile .cols-3, body.mobile .cols-4 { grid-template-columns: 1fr; }
+    body.mobile .col, body.mobile .col--tall { display: block; grid-row: auto; grid-column: auto; padding: 0; border-left: 0; }
+    body.mobile .col--tall .colbody { grid-row: auto; }
+    body.mobile .colhead { font-size: 1.12em; }
+    body.mobile .colhead span { min-height: 0; }
+    body.mobile .colbody { padding: .7em 0 1.3em; }
+    body.mobile .points-2 { columns: 1; }
+    body.mobile .bgart, body.mobile .sky, body.mobile .backdrop, body.mobile .band .footart { display: none; }
+    body.mobile .band { margin: 8px -18px 0 -30px; padding: 16px 18px 18px 30px; min-height: 0; }
+    body.mobile .band--slim { display: none; }
+    body.mobile .band .eyebrow { font-size: 11px; }
+    body.mobile .band p { font-size: 16px; }
+    /* forsíða og skiptisíður */
+    body.mobile .cover-text { padding: 40px 20px 0 32px; }
+    body.mobile .cover-text h1 { font-size: 44px; }
+    body.mobile .slide--divider .cover-text h1 { font-size: 36px; }
+    body.mobile .cover-text .sub { font-size: 18px; margin-top: 16px; }
+    body.mobile .cover-text .authors { font-size: 14px; margin-top: 22px; }
+    body.mobile .horizon { position: relative; margin-top: 24px; }
+    /* Leiðarljós (texti og mynd) */
+    body.mobile .slide--split { flex-direction: column; }
+    body.mobile .split-text { padding: 30px 20px 10px 32px; }
+    body.mobile .split-text h1 { font-size: 36px; margin: 12px 0 18px; }
+    body.mobile .split-text h1::after { margin-top: 18px; width: 80px; height: 6px; }
+    body.mobile .split-text p { font-size: 17px; }
+    body.mobile .split-image { flex: none; height: 240px; }
+    /* Meginreglur, útkomur, Hlutverkið */
+    body.mobile .slide--principles .sbody { margin-bottom: 0; }
+    body.mobile .principles, body.mobile .outcomes { grid-template-columns: 1fr; }
+    body.mobile .horizon-low { position: relative; height: 110px; }
+    body.mobile .slide--umbod .sbody { grid-template-columns: 1fr; row-gap: 24px; }
+    body.mobile .slide--umbod .mlead { font-size: 16px; }
+    body.mobile .mandate { padding-left: 18px; border-left-width: 5px; }
+    body.mobile .mandate p { font-size: 19px; }
+    body.mobile .people--grid { grid-template-columns: repeat(2, 1fr); gap: 18px 12px; }
+    body.mobile .people--grid li, body.mobile .people--grid li:nth-child(4) { grid-column: auto; }
+    body.mobile .people--grid img { width: 104px; height: 104px; }
+    /* Viðfangsefnin: yfirlitið og „ekki tekið fyrir“ */
+    body.mobile .vgrid { grid-template-columns: 1fr; height: auto; gap: 18px; }
+    body.mobile .vcol { grid-template-rows: none; }
+    body.mobile .vcard { padding: 10px 14px; }
+    body.mobile .vcard .num { font-size: 22px; }
+    body.mobile .vcard h3 { font-size: 16px; }
+    body.mobile .cards, body.mobile .cards--quiet:has(.card--off) { grid-template-columns: 1fr; grid-template-rows: none; height: auto; font-size: 16px; }
+    body.mobile .card h3, body.mobile .card--quiet h3 { font-size: 18px; }
+    body.mobile .card--off h3 { font-size: 16px; } body.mobile .card--off p { font-size: 14px; }
+    body.mobile .slide--overview .card .num { font-size: 24px; } body.mobile .slide--overview .card h3 { font-size: 18px; }
+    /* skipuritið og lokaglæran */
+    body.mobile .slide--chart figure, body.mobile .slide--chart figure img { height: auto; width: 100%; }
+    body.mobile .slide--image .fill { position: relative; height: 240px; }
+    body.mobile .overlay, body.mobile .overlay--low, body.mobile .overlay--mid { position: relative; left: auto; top: auto; bottom: auto; transform: none; max-width: none; margin: 0; border-radius: 0; padding: 22px 20px 26px 32px; }
+    body.mobile .overlay h1, body.mobile .overlay--low h1, body.mobile .overlay--mid h1 { font-size: 30px; }
+    body.mobile .overlay p { font-size: 17px; }
+    body.mobile .closing-row { flex-wrap: wrap; gap: 18px; }
+    body.mobile .qr-ph, body.mobile .qr { display: none; }   /* QR-kóði á ekki við á símanum sjálfum */
+    body.mobile .ctl-center { display: none; }
+    /* flettihnapparnir verða stika neðst sem hylur ekki texta */
+    body.mobile { padding-bottom: 64px; }
+    body.mobile .hover-zone, body.mobile #btn-full { display: none; }
+    body.mobile .ctl-right { left: 0; right: 0; bottom: 0; justify-content: center; gap: 10px; padding: 8px 12px calc(8px + env(safe-area-inset-bottom));
+                             background: rgba(250,249,246,.96); box-shadow: 0 -1px 0 var(--rule); }
+    body.mobile .ctl-right .quiet { opacity: 1; }
+    body.mobile .ctl button { height: 40px; min-width: 40px; box-shadow: none; }
+    body.mobile .ctl .round { font-size: 18px; }
+    body.mobile .ctl .count { box-shadow: none; }
+    /* glæran fyllir að minnsta kosti skjáinn (HG 2026-10-06): borðinn neðst, fjallalínan á botninum, myndin fyllir afganginn */
+    body.mobile .slide { min-height: calc(100vh - 64px); min-height: calc(100svh - 64px); }
+    body.mobile .horizon, body.mobile .horizon-low { margin-top: auto; }
+    body.mobile .split-image { flex: 1 1 240px; }
+    body.mobile .slide--image .overlay { flex: 1; }
+  }
+  @media print { .ctl, .hover-zone, .pager { display: none; } .page { display: block; break-before: page; } }
+  /* Skipuritið: smellt til að stækka */
+  .prose figure.chart img { cursor: zoom-in; }
+  .lightbox { position: fixed; inset: 0; z-index: 1000; display: none; align-items: center; justify-content: center;
+              padding: 2vmin; background: rgba(16, 36, 62, .88); cursor: zoom-out; }
+  .lightbox.is-open { display: flex; }
+  .lightbox:fullscreen { padding: 1vmin; background: #FAF9F6; }
+  .lightbox img { max-width: 100%; max-height: 100%; background: #FAF9F6; border-radius: 6px; }
+</style>
+</head>
+<body>
+<nav class="toc" id="toc"><button class="toc-close" id="toc-close" aria-label="Close">✕</button><div class="toc-title">AI for Good</div><div class="toc-inner">
+<div class="toc-group">Introduction</div>
+<div class="toc-item"><a href="#forsida"><span>01</span>Cover</a><div class="toc-subs"></div></div>
+<div class="toc-item"><a href="#umbodid"><span>02</span>The mandate</a><div class="toc-subs"><a class="toc-sub" href="#umbodid/efni">About this summary</a></div></div>
+<div class="toc-item"><a href="#leidarljos"><span>03</span>Guiding light</a><div class="toc-subs"></div></div>
+<div class="toc-item"><a href="#meginreglur"><span>04</span>Principles</a><div class="toc-subs"></div></div>
+<div class="toc-item"><a href="#utkomur"><span>05</span>Three outcomes</a><div class="toc-subs"></div></div>
+<div class="toc-group">Institutional arrangement</div>
+<div class="toc-item"><a href="#stofnanafyrirkomulag"><span>06</span>Institutional arrangement</a><div class="toc-subs"></div></div>
+<div class="toc-item"><a href="#stofnanafyrirkomulag-org-chart"><span>07</span>Institutional arrangement: org chart</a><div class="toc-subs"></div></div>
+<div class="toc-group">Closing</div>
+<div class="toc-item"><a href="#fyrstu-skref"><span>08</span>First steps</a><div class="toc-subs"><a class="toc-sub" href="#fyrstu-skref/closing-words">Closing words</a></div></div>
+<div class="toc-item"><a href="#in-the-full-report"><span>09</span>In the full report</a><div class="toc-subs"></div></div>
+<div class="toc-group">End</div>
+<div class="toc-item"><a href="#lok"><span>10</span>End</a><div class="toc-subs"></div></div>
+</div>
+<a class="toc-pdf" href="ai-for-good-summary.pdf" target="_blank" rel="noopener"><img src="../images/pdf-cover-en.jpg" alt=""><span><b>The summary as PDF</b><small>Same content, laid out for print and reading</small><em>Open ↗</em></span></a>
+</nav>
+<main id="deck">
+<article class="page" id="forsida" data-kind="cover" data-title="Cover"><div class="stage-wrap"><div class="stage"><div class="slide slide--cover"><div class="flag"></div><div class="cover-text"><div class="kicker">English summary of a task force report on the Icelandic government&#x27;s approach to AI</div><h1>AI for Good</h1><p class="sub">Iceland as a model society for using AI for good</p><p class="authors"><span>Hjálmar Gíslason</span><span>Anna Kristín Tumadóttir</span><span>Ari Kristinn Jónsson</span><span>Halldór Fannar Guðjónsson</span><span>Lilja Dögg Jónsdóttir</span></p></div><img class="horizon" src="../images/cover-horizon.png" alt=""></div></div></div></article>
+<article class="page" id="umbodid" data-kind="std" data-title="The mandate"><div class="stage-wrap"><div class="stage"><div class="slide slide--std slide--umbod"><div class="flag"></div><header class="shead"><div class="kicker">AI for Good</div><h1>The mandate</h1></header><div class="sbody"><div class="mtext"><p class=mlead>The task force on the government's approach to AI was appointed on 1 July 2026 by the Prime Minister and the Minister of Culture, Innovation and Higher Education: five experts from outside government, three months of work and well over a hundred contributions from across society.</p><blockquote class="mandate"><div class=mlabel>From the letter of appointment</div><p>“to assess the government's overall approach to AI in light of the technology's rapid development, and to propose priorities and improvements.”</p></blockquote></div><ul class="people people--grid"><li><img src="../images/portrait-hjalmar.jpg" alt=""><b>Hjálmar Gíslason<a href="https://www.linkedin.com/in/hjalli" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></b><span>chair · <a href="https://grid.is/" target="_blank" rel="noopener">GRID</a></span></li><li><img src="../images/portrait-anna.jpg" alt=""><b>Anna Kristín Tumadóttir<a href="https://www.linkedin.com/in/annatumadottir" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></b><span><a href="https://creativecommons.org/" target="_blank" rel="noopener">Creative Commons</a></span></li><li><img src="../images/portrait-ari.jpg" alt=""><b>Ari Kristinn Jónsson<a href="https://www.linkedin.com/in/ari-jonsson" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></b><span><a href="https://www.nif.fund/" target="_blank" rel="noopener">NATO Innovation Fund</a></span></li><li><img src="../images/portrait-halldor.jpg" alt=""><b>Halldór Fannar Guðjónsson<a href="https://www.linkedin.com/in/halldor-fannar-08314" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></b><span><a href="https://www.nvidia.com/" target="_blank" rel="noopener">NVIDIA</a></span></li><li><img src="../images/portrait-lilja.jpg" alt=""><b>Lilja Dögg Jónsdóttir<a href="https://www.linkedin.com/in/lilja-d%C3%B6gg-j%C3%B3nsd%C3%B3ttir-b6619985" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></b><span><a href="https://almannaromur.is/" target="_blank" rel="noopener">Almannarómur</a></span></li></ul></div><footer class="band"><span class=eyebrow>In a nutshell</span><p>This report is the task force's assessment and recommendations. Decisions and next steps rest with the government.</p></footer></div></div></div><div class="long"><nav class="secnav"><div class="secnav-title">The mandate</div><a href="#umbodid/efni">About this summary</a></nav><div class="prose"><section id="umbodid/efni"><p><strong>About this summary.</strong> This is an English summary of <em lang="is">Gervigreind til góðs</em> (AI for Good), published in Icelandic on 9 October 2026. It covers the guiding light, the principles and the three outcomes in full, and the institutional arrangement and first steps in brief. The full report, with a chapter on AI and society, eight topic chapters and 69 recommendations in all, is published on the <a href="https://www.stjornarradid.is/verkefni/upplysingataeknimal-rikisins/gervigreind/gervigreind-til-gods" hreflang="is" target="_blank" rel="noopener">Government of Iceland's website</a>, with a <a href="https://gervigreind-til-gods.github.io/" hreflang="is" target="_blank" rel="noopener">web version</a> alongside it. Readers who want more detail are welcome to machine translate it.</p></section></div></div></article>
+<article class="page" id="leidarljos" data-kind="image" data-title="Guiding light"><div class="stage-wrap"><div class="stage"><div class="slide slide--split"><div class="flag"></div><div class="split-text"><div class="kicker">Guiding light</div><h1>AI for Good</h1><p>Icelandic society can become a model for using AI for good: ambitious in its goals and responsible in its actions. AI should improve quality of life, public services and productivity - in Icelandic and on our own terms - so that the benefits reach everyone.</p></div><div class="split-image"><img src="../images/leidarljos-varda.jpg" alt="" style="object-position: 50% 60%"></div></div></div></div></article>
+<article class="page" id="meginreglur" data-kind="std" data-title="Principles"><div class="stage-wrap"><div class="stage"><div class="slide slide--std slide--principles"><div class="flag"></div><header class="shead"><div class="kicker">AI for Good</div><h1>Principles</h1></header><div class="sbody" data-kmax="1.15"><div class="principles"><section class="pr"><h3>Society's capacity <span class="not">is the key</span></h3><p>Iceland cannot control how the technology develops. Our skills, readiness, trust and ability to put AI to work decide whether it serves us well.</p></section><section class="pr"><h3>A mountain climb, <span class="not">not a moonshot</span></h3><p>Advance in manageable, measurable stages with regular checkpoints along the way. But we are going for the summit!</p></section><section class="pr"><h3>No-regret moves, <span class="not">not bets</span></h3><p>Focus on actions that hold up across a range of scenarios: how the technology evolves, how it affects society and how fast things change. Monitor developments, and be ready to act as uncertainty and impact grow.</p></section><section class="pr"><h3>Opportunities <span class="not">first</span></h3><p>Make the most of what AI can do for quality of life, public services and productivity.</p></section><section class="pr"><h3>Prevent harm, <span class="not">where needed</span></h3><p>Meet risks and challenges firmly as they emerge. Regulate harmful uses of a technology, not the technology itself.</p></section><section class="pr"><h3>Everyone included</h3><p>Access and opportunity for everyone, whatever their circumstances. Public dialogue is part of the necessary AI infrastructure.</p></section></div></div><div class="horizon-low"><img src="../images/cover-horizon.png" alt=""></div></div></div></div></article>
+<article class="page" id="utkomur" data-kind="std" data-title="Three outcomes"><div class="stage-wrap"><div class="stage"><div class="slide slide--std slide--outcomes"><div class="flag"></div><header class="shead"><div class="kicker">AI for Good</div><h1>Three outcomes</h1><p class="ssub">The task force's recommendations converge on three outcomes, each with its own path:</p></header><div class="sbody" data-kmax="1.12"><div class="outcomes"><section class="oc o-1"><div class="oc-label">Outcome 1</div><h3>AI skills across society</h3><ol><li>Give everyone the chance to understand AI's benefits and challenges and learn to use it, with training on work time. Teachers and managers first</li><li>Set a national framework for AI in schools, and give teachers hands-on support from a small central team</li><li>Measure AI's impact on the labour market, prepare for a range of scenarios and act when signals appear</li></ol></section><section class="oc o-2"><div class="oc-label">Outcome 2</div><h3>AI in Icelandic, on our own terms</h3><ol><li>Open up Icelandic language and cultural data, in cooperation with rights holders</li><li>Develop an open training recipe and benchmarks that help make any model fluent in Icelandic language, knowledge and values</li><li>Run a swappable model under Icelandic control for sensitive public sector work</li></ol></section><section class="oc o-3"><div class="oc-label">Outcome 3</div><h3>Purposeful adoption of AI in the public sector</h3><ol><li class="key build"><span class="kt" data-t="Combine the state's core systems and IT operations under one unit with clear responsibilities and authority"><span>Combine the state's core systems and IT operations under one unit with clear responsibilities and authority</span></span></li><li>Develop clear guidance for use of AI and make sure it reaches every public employee</li><li>Set up a small implementation task force and start two pilot projects: one shared across the public sector, one in-depth at a single institution</li><li>Get public sector data in order, harmonise it and settle classification and access control</li></ol></section></div></div><footer class="band"><p>AI policy must move faster than the usual pace of politics and government.<br>The first steps can be taken immediately and require no new legislation.</p></footer></div></div></div></article>
+<article class="page" id="stofnanafyrirkomulag" data-kind="std" data-title="Institutional arrangement"><div class="stage-wrap"><div class="stage"><div class="slide slide--std"><div class="flag"></div><header class="shead"><div class="kicker">Framework · 1/2</div><h1>Institutional arrangement</h1></header><div class="banner"><span class="label">In a nutshell</span><p>Clear ownership, joined-up effort and continuity from one government to the next.</p></div><div class="sbody"><div class="cols cols-3"><section class="col col--first"><div class="colhead"><span>Give AI a place at the top</span></div><div class="colbody"><p>A ministerial committee for at least three years, with coordination and overall strategy in the Prime Minister's Office. The ministry responsible for AI drafts the strategy and the committee adopts it.</p></div></section><section class="col"><div class="colhead"><span>Support each ministry's own work</span></div><div class="colbody"><p>A steering group of all ministries, and each ministry assigns one unit responsible for digital affairs. Responsibilities largely stay where they are.</p></div></section><section class="col col--tall"><div class="colhead"><span>Merge the state's core IT</span></div><div class="colbody"><p>One unit, Digital Iceland, under the Ministry of Finance, with clear responsibility and authority for government IT. It runs shared infrastructure, including a language model for government use, and remains the digital front door of government for residents and businesses.</p></div></section><section class="col col--first"><div class="colhead"><span>Build the capacity to deliver</span></div><div class="colbody"><p>A nimble AI implementation task force inside Digital Iceland, where the authority sits. Start small: one project across government and one at a single institution. A small team steers and the market scales.</p></div></section><section class="col"><div class="colhead"><span>Secure continuity beyond elections</span></div><div class="colbody"><p>An independent AI council publishing an assessment twice a year, which the ministerial committee must answer in public.</p></div></section></div></div><div class="bgart"><img src="../images/bg-thingvellir.webp" alt=""></div><footer class="band"><span class="eyebrow">Why</span><p>Responsibility is scattered, and recommendations without an owner gather dust.<br>Our mandate was AI, but AI in government runs on IT, so we address both.</p></footer></div></div></div></article>
+<article class="page" id="stofnanafyrirkomulag-org-chart" data-kind="std" data-title="Institutional arrangement: org chart"><div class="stage-wrap"><div class="stage"><div class="slide slide--std slide--chart"><div class="flag"></div><div class="sbody"><figure class="chart"><img src="../images/skipurit-en.svg" alt="Org chart of the proposed institutional arrangement: a ministerial committee on AI with the Prime Minister&#x27;s Office at its core, an independent AI council that advises it and is owed a public response, a steering group of all ministries, the Ministry of Finance with Digital Iceland, the ministry responsible for AI with the Centre for AI and Language Technology, and the line ministries, each owning AI&#x27;s impact in its own field."></figure></div><footer class="band"><span class="eyebrow">What changes</span><p>Policy stays with the line ministries.<br>New: a ministerial committee, steering group, AI council and a new Digital Iceland.</p></footer></div></div></div></article>
+<article class="page" id="fyrstu-skref" data-kind="std" data-title="First steps"><div class="stage-wrap"><div class="stage"><div class="slide slide--std"><div class="flag"></div><header class="shead"><div class="kicker">Closing</div><h1>First steps</h1></header><div class="banner"><span class="label">In a nutshell</span><p>Decisions that can be made before the end of 2026. None of them requires new legislation.</p></div><div class="sbody"><div class="cols cols-3"><section class="col col--first"><div class="colhead"><span>Prime Minister's Office</span></div><div class="colbody"><p>Appoint the ministerial committee on AI, the steering group of all ministries and the independent AI council. Task Statistics Iceland with measuring AI's impact on the labour market. The steering group launches the education drive.</p></div></section><section class="col"><div class="colhead"><span>Ministry of Culture, Innovation and Higher Education</span></div><div class="colbody"><p>Update the AI and language technology plan. Start work on an open training recipe and Icelandic benchmarks. Tell cultural institutions clearly that opening up their collections is government policy.</p></div></section><section class="col"><div class="colhead"><span>Ministry of Finance and Economic Affairs</span></div><div class="colbody"><p>Merge Digital Iceland and the IT side of Umbra, the government's operations agency, into one unit with clear responsibility and authority. Set up the implementation task force and choose two pilot projects.</p></div></section><section class="col col--first"><div class="colhead"><span>Ministry of Education and Children</span></div><div class="colbody"><p>Form a national framework for AI in schools and set up a central team that works alongside teachers.</p></div></section><section class="col"><div class="colhead"><span>All ministries</span></div><div class="colbody"><p>Give one unit in each ministry responsibility for digital affairs and AI. Put guidance and approved tools in the hands of all staff.</p></div></section></div></div><div class="bgart"><img src="../images/bg-ferdalangur.webp" alt=""></div><footer class="band"><span class="eyebrow">One year from now</span><p>Every recommendation has an owner and the pilot projects are in use.<br>The first training recipe is out and the AI council is operating as planned.</p></footer></div></div></div><div class="long"><nav class="secnav"><div class="secnav-title">First steps</div><a href="#fyrstu-skref/closing-words">Closing words</a></nav><div class="prose"><section id="fyrstu-skref/closing-words"><h2>Closing words</h2><p>We believe Iceland can use AI for good, for the benefit of all of society. We do not underestimate the challenges. They are real, and some are unknown and without precedent. Iceland will not lead the technology's development globally, so building society's capacity is how we meet them.</p>
+<p>Iceland is a small country with short lines of communication. That is a strength, but only if responsibility is clear and the work actually gets done. That is why so many of our recommendations are about who takes the work forward and how it is followed through.</p>
+<p>We thank everyone who gave their time to talk with us, write to us and challenge our thinking. The conclusions are far better for it. We are glad to present the recommendations as widely as we can and to take part in the conversation that follows, in whatever way is asked of us.</p></section></div></div></article>
+<article class="page" id="in-the-full-report" data-kind="std" data-title="In the full report"><div class="stage-wrap"><div class="stage"><div class="slide slide--std"><div class="flag"></div><header class="shead"><div class="kicker">Beyond this summary</div><h1>In the full report</h1></header><div class="banner"><span class="label">In a nutshell</span><p>The full report, in Icelandic, also covers AI and society and eight priority topics, each with recommendations, the current situation and the reasoning behind them.</p></div><div class="sbody"><div class="cols cols-4"><section class="col col--first"><div class="colhead"><span>Society</span></div><div class="colbody"><ul><li><a href="https://gervigreind-til-gods.github.io/#samfelag-1" hreflang="is" target="_blank" rel="noopener">AI and society</a>: technology at a turning point, the labour market, business and innovation support, equality and welfare, democracy and the media, security, trust and dialogue</li></ul></div></section><section class="col"><div class="colhead"><span>Skills</span></div><div class="colbody"><ul><li><a href="https://gervigreind-til-gods.github.io/#kafli-1" hreflang="is" target="_blank" rel="noopener">1 · Education and skills</a></li></ul></div></section><section class="col"><div class="colhead"><span>On our own terms</span></div><div class="colbody"><ul><li><a href="https://gervigreind-til-gods.github.io/#kafli-2" hreflang="is" target="_blank" rel="noopener">2 · Data</a></li><li><a href="https://gervigreind-til-gods.github.io/#kafli-3" hreflang="is" target="_blank" rel="noopener">3 · Icelandic language technology and language models</a></li><li><a href="https://gervigreind-til-gods.github.io/#kafli-4" hreflang="is" target="_blank" rel="noopener">4 · Copyright and AI</a></li><li><a href="https://gervigreind-til-gods.github.io/#kafli-5" hreflang="is" target="_blank" rel="noopener">5 · Compute, data centres and energy</a></li><li><a href="https://gervigreind-til-gods.github.io/#kafli-6" hreflang="is" target="_blank" rel="noopener">6 · AI sovereignty</a></li></ul></div></section><section class="col"><div class="colhead"><span>Adoption and framework</span></div><div class="colbody"><ul><li><a href="https://gervigreind-til-gods.github.io/#kafli-7" hreflang="is" target="_blank" rel="noopener">7 · AI in the public sector</a></li><li><a href="https://gervigreind-til-gods.github.io/#kafli-8" hreflang="is" target="_blank" rel="noopener">8 · Regulation and the legal framework</a></li><li><a href="https://gervigreind-til-gods.github.io/#stofnanafyrirkomulag" hreflang="is" target="_blank" rel="noopener">Institutional arrangement</a></li></ul></div></section></div></div><footer class="band"><span class="eyebrow">Read on</span><p><a href="https://www.stjornarradid.is/verkefni/upplysingataeknimal-rikisins/gervigreind/gervigreind-til-gods" hreflang="is" target="_blank" rel="noopener">The full report</a> lists all 69 recommendations in an appendix.</p></footer></div></div></div></article>
+<article class="page" id="lok" data-kind="image" data-title="End"><div class="stage-wrap"><div class="stage"><div class="slide slide--image"><img class="fill" src="../images/packed-journey.jpg" alt=""><div class="flag"></div><div class="overlay overlay--mid"><h1>AI for Good</h1><p>Iceland as a model society for using AI for good</p><div class="closing-row"><div class="qr"><img src="../images/qr-stjornarradid.svg" alt="QR code: the full report on the Government of Iceland website"><small>Full report (Icelandic)</small></div><a class="dl-card" href="ai-for-good-summary.pdf" target="_blank" rel="noopener"><img src="../images/pdf-cover-en.jpg" alt=""><span>Open the summary (PDF) ↗</span></a></div></div></div></div></div></article>
+</main>
+<nav class="ctl-nav" aria-label="Controls">
+<div class="hover-zone"></div>
+<div class="ctl ctl-center"><a class="pill" id="ctl-read" href="#">Read more ↓</a></div>
+<div class="ctl ctl-top"><a class="pill lang" id="ctl-lang" href="../" hreflang="is" lang="is"><span class="lang-long">Full report in Icelandic</span><span class="lang-short">Full report</span></a></div>
+<div class="ctl ctl-right">
+  <span class="count quiet" id="count"></span>
+  <button class="round quiet" id="btn-toc" aria-label="Contents" title="Contents (Shift+E)">☰</button>
+  <button class="round quiet" id="btn-full" aria-label="Full screen" title="Full screen (Shift+F)"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+  <button class="round quiet" id="btn-prev" aria-label="Back" title="Back (←)">←</button>
+  <button class="round" id="btn-next" aria-label="Next" title="Next (→)">→</button>
+</div>
+</nav>
+<div class="sr-only" id="sr-status" role="status" aria-live="polite"></div>
+<div class="pager" id="pager"><a id="pg-prev" href="#"></a><a id="pg-next" href="#"></a></div>
+
+<script>
+(function () {
+  var pages = Array.prototype.slice.call(document.querySelectorAll('.page'));
+  var ids = pages.map(function (p) { return p.id; });
+  var cur = -1, W = 1600, H = 900;
+  var $ = function (id) { return document.getElementById(id); };
+
+  function layout() {
+    var p = pages[cur]; if (!p) return;
+    var wrap = p.querySelector('.stage-wrap'), stage = p.querySelector('.stage');
+    var vw = document.documentElement.clientWidth, vh = window.innerHeight;
+    // Farsími (HG 2026-10-06): undir 700 px rennur glæran án sköluðu striga (sjá CSS-blokkina fyrir max-width: 699px)
+    var mob = window.matchMedia('(max-width: 699px)').matches && !document.body.classList.contains('present');
+    document.body.classList.toggle('mobile', mob);
+    if (mob) {
+      stage.style.width = stage.style.height = stage.style.transform = ''; wrap.style.height = '';
+      ['--ctlpad', '--slimh', '--ctlbottom'].forEach(function (v) { stage.style.removeProperty(v); });
+      var b = p.querySelector('.sbody'); if (b) b.style.removeProperty('--k');
+      return;
+    }
+    var s = Math.min(vw / W, vh / H);
+    var w = vw / s, h = vw < 700 ? Math.min(vh / s, 1250) : vh / s;   // canvas takes the window's shape, never below 1600 × 900
+    stage.style.width = w + 'px'; stage.style.height = h + 'px';
+    stage.style.transform = 'scale(' + s + ')';
+    wrap.style.height = h * s + 'px';
+    // keep the band's text clear of the floating buttons, whatever the scale
+    stage.style.setProperty('--ctlpad', Math.max(84, (document.querySelector('.ctl-right').offsetWidth + 56) / s) + 'px');
+    stage.style.setProperty('--slimh', 92 / s + 'px');
+    // pages with long form: room under the band's text for the centred 'Lesa nánar'
+    stage.style.setProperty('--ctlbottom', (p.querySelector('.long') && !document.body.classList.contains('present') ? 72 / s : 30) + 'px');
+    fit(p);
+  }
+
+  // Dense draft slides: step the body type down until it fits the canvas.
+  function fit(p) {
+    var body = p.querySelector('.sbody'); if (!body) return;
+    var ncol = body.querySelectorAll('.col').length;
+    var k = parseFloat(body.dataset.kmax) || (ncol && ncol <= 2 ? 1.0 : 1.18); body.style.setProperty('--k', k);   // dense slides step down; two columns or fewer never scale up (they read as headline slides)
+    while (body.scrollHeight > body.clientHeight + 1 && k > 0.5) { k -= 0.03; body.style.setProperty('--k', k.toFixed(2)); }
+    body.dataset.fit = k.toFixed(2);
+  }
+
+  function show(i, anchor) {
+    i = Math.max(0, Math.min(pages.length - 1, i));
+    if (i !== cur) {
+      var first = cur < 0;
+      if (pages[cur]) pages[cur].classList.remove('is-active');
+      cur = i; pages[cur].classList.add('is-active');
+      builds(pages[cur]).forEach(function (x) { x.classList.toggle('is-on', lastDir < 0); }); lastDir = 0;   // komið til baka: skrefin þegar sýnd
+      $('count').textContent = (cur + 1) + ' / ' + pages.length;
+      if (!first) {   // skjálesari heyrir hvert var flett (aðgengismál HG 2026-10-07)
+        var en = document.documentElement.lang === 'en';
+        $('sr-status').textContent = (en ? 'Page ' : 'Síða ') + (cur + 1) + (en ? ' of ' : ' af ') + pages.length + ': ' + pages[cur].dataset.title;
+      }
+      $('btn-prev').disabled = cur === 0; $('btn-next').disabled = cur === pages.length - 1;
+      var hasLong = !!pages[cur].querySelector('.long');
+      $('ctl-read').style.display = hasLong ? '' : 'none';
+      $('pager').style.display = hasLong ? '' : 'none';   // nothing below the fold on slide-only pages
+      var prev = pages[cur - 1], next = pages[cur + 1];
+      $('pg-prev').textContent = prev ? '← ' + prev.dataset.title : ''; $('pg-prev').href = prev ? '#' + prev.id : '#';
+      $('pg-next').textContent = next ? next.dataset.title + ' →' : ''; $('pg-next').href = next ? '#' + next.id : '#';
+      layout();
+    }
+    var el = anchor && document.getElementById(anchor);
+    if (el) el.scrollIntoView(); else window.scrollTo(0, 0);
+    onScroll();
+  }
+
+  function route() {
+    var h = decodeURIComponent(location.hash.slice(1));
+    var i = ids.indexOf(h.split('/')[0]);
+    $('toc').classList.remove('is-open');
+    show(i < 0 ? 0 : i, h.indexOf('/') > 0 ? h : null);
+  }
+  // Skref á glæru (.build): í kynningu kveikir → á næsta skrefi áður en flett er, ← slekkur á því síðasta
+  var lastDir = 0;
+  function builds(p) { return Array.prototype.slice.call(p.querySelectorAll('.build')); }
+  function go(d) {
+    if (document.body.classList.contains('present') && pages[cur]) {
+      var b = builds(pages[cur]);
+      var off = b.filter(function (x) { return !x.classList.contains('is-on'); });
+      var on = b.filter(function (x) { return x.classList.contains('is-on'); });
+      if (d > 0 && off.length) { off[0].classList.add('is-on'); return; }
+      if (d < 0 && on.length) { on[on.length - 1].classList.remove('is-on'); return; }
+    }
+    var n = cur + d; if (n >= 0 && n < pages.length) { lastDir = d; location.hash = ids[n]; }
+  }
+
+  function onScroll() {
+    var reading = window.scrollY > window.innerHeight * 0.4;
+    $('ctl-read').textContent = reading ? '↑ Slide' : 'Read more ↓';
+    $('ctl-read').dataset.up = reading ? '1' : '';
+  }
+  function present(on) {
+    if (on && document.documentElement.requestFullscreen) document.documentElement.requestFullscreen().catch(function () {});
+    if (!on && document.fullscreenElement) document.exitFullscreen();
+  }
+
+  $('btn-prev').onclick = function () { go(-1); };
+  $('btn-next').onclick = function () { go(1); };
+  $('btn-toc').onclick = function () { $('toc').classList.toggle('is-open'); };
+  $('btn-full').onclick = function () { present(!document.body.classList.contains('present')); };
+  $('toc-close').onclick = function () { $('toc').classList.remove('is-open'); };
+  $('toc').addEventListener('click', function (e) { if (e.target.closest('a')) $('toc').classList.remove('is-open'); });
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('#ctl-read')) {
+      e.preventDefault();
+      if ($('ctl-read').dataset.up) window.scrollTo({ top: 0, behavior: 'smooth' });
+      else pages[cur].querySelector('.long').scrollIntoView({ behavior: 'smooth' });
+      return;
+    }
+    if (document.body.classList.contains('present') && !e.target.closest('a, button, .toc')) go(e.clientX < window.innerWidth * 0.25 ? -1 : 1);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var pres = document.body.classList.contains('present');
+    if (e.key === 'ArrowRight' || e.key === 'PageDown' || (pres && e.key === ' ')) { e.preventDefault(); go(1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(-1); }
+    // stafalyklarnir krefjast Shift (aðgengismál HG 2026-10-07, WCAG 2.1.4): stök stafsetning í talstýringu kveikir ekki á þeim
+    else if (e.shiftKey && (e.key === 'K' || e.key === 'F')) present(!pres);
+    else if (e.shiftKey && e.key === 'E') $('toc').classList.toggle('is-open');
+    else if (e.key === 'Escape') { if (pres) present(false); $('toc').classList.remove('is-open'); }
+    else if (e.key === 'Home') location.hash = ids[0];
+    else if (e.key === 'End') location.hash = ids[ids.length - 1];
+  });
+  document.addEventListener('fullscreenchange', function () {
+    document.body.classList.toggle('present', !!document.fullscreenElement); window.scrollTo(0, 0); layout();
+  });
+  var tx = null;
+  document.addEventListener('touchstart', function (e) { tx = e.target.closest('.stage-wrap') ? e.touches[0].clientX : null; }, { passive: true });
+  document.addEventListener('touchend', function (e) {
+    if (tx === null) return; var dx = e.changedTouches[0].clientX - tx; tx = null;
+    if (Math.abs(dx) > 60) go(dx < 0 ? 1 : -1);
+  });
+  window.addEventListener('resize', layout);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('hashchange', route);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  route();
+})();
+</script>
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Enlarged image"><img alt=""></div>
+<script>
+(function () {
+  var lb = document.getElementById('lightbox'), im = lb.querySelector('img');
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest('figure.chart img');
+    if (t) {
+      e.stopPropagation(); im.src = t.src; im.alt = t.alt; lb.classList.add('is-open');
+      // the whole screen, not just the window; falls back to the in-window overlay where fullscreen is refused
+      if (lb.requestFullscreen && !document.fullscreenElement) lb.requestFullscreen().catch(function () {});
+    }
+    else if (e.target.closest('#lightbox')) { e.stopPropagation(); close(); }
+  }, true);
+  function close() {
+    lb.classList.remove('is-open');
+    if (document.fullscreenElement === lb) document.exitFullscreen().catch(function () {});
+  }
+  // Esc in fullscreen is eaten by the browser and only exits fullscreen: close the overlay with it
+  document.addEventListener('fullscreenchange', function () { if (!document.fullscreenElement) lb.classList.remove('is-open'); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && lb.classList.contains('is-open')) { e.stopImmediatePropagation(); close(); }
+  }, true);
+})();
+</script>
+<style>.ctl-top{top:22px;right:22px;bottom:auto}.ctl .lang{height:40px;font-size:13px}.ctl .lang-short{display:none}body.present .ctl .lang{display:none}body.mobile .ctl-top{position:absolute;top:12px;right:12px}body:not(.present):not(.mobile) .slide--chart{padding-top:var(--langpad,22px)}@media (max-width:699px){.ctl .lang-long{display:none}.ctl .lang-short{display:inline}.ctl .lang{padding:0 14px}}</style>
+<script>(function(){var m={"forsida": "forsida", "umbodid": "umbodid", "leidarljos": "leidarljos", "meginreglur": "meginreglur", "utkomur": "utkomur", "stofnanafyrirkomulag": "stofnanafyrirkomulag", "stofnanafyrirkomulag-org-chart": "stofnanafyrirkomulag-skipuritid", "fyrstu-skref": "fyrstu-skref", "in-the-full-report": "vidfangsefnin", "lok": "lok"},a=document.getElementById('ctl-lang');function u(){var id=decodeURIComponent(location.hash.slice(1)).split('/')[0];a.href='../'+(m[id]&&m[id]!=='forsida'?'#'+m[id]:'');}window.addEventListener('hashchange',u);u();function pad(){var s=document.querySelector('.stage');if(!s)return;var k=new DOMMatrix(getComputedStyle(s).transform).a||1;document.documentElement.style.setProperty('--langpad',Math.round(74/k)+'px');}window.addEventListener('resize',function(){setTimeout(pad,50);});window.addEventListener('load',pad);setTimeout(pad,300);})();</script>
+</body>
+</html>

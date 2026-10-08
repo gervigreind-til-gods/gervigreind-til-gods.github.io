@@ -16,6 +16,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:url" content="https://gervigreind-til-gods.github.io/">
 <link rel="canonical" href="https://gervigreind-til-gods.github.io/">
+<link rel="alternate" hreflang="is" href="https://gervigreind-til-gods.github.io/">
+<link rel="alternate" hreflang="en" href="https://gervigreind-til-gods.github.io/en/">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
 <link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64.png">
@@ -504,6 +506,7 @@
 <div class="toc-item"><a href="#lok"><span>26</span>Lok</a><div class="toc-subs"></div></div>
 </div>
 <a class="toc-pdf" href="gervigreind-til-gods.pdf" target="_blank" rel="noopener"><img src="images/pdf-cover.jpg" alt=""><span><b>Skýrslan sem PDF</b><small>Sama efni, sniðið til prentunar og lestrar</small><em>Opna ↗</em></span></a>
+<a class="toc-pdf toc-en" href="en/" hreflang="en" lang="en"><span><b>English summary</b><small>Leiðarljós, meginreglur, útkomurnar þrjár og fyrstu skref á ensku</small><em>Open →</em></span></a>
 </nav>
 <main id="deck">
 <article class="page" id="forsida" data-kind="cover" data-title="Forsíða"><div class="stage-wrap"><div class="stage"><div class="slide slide--cover"><div class="flag"></div><div class="cover-text"><div class="kicker">Mat og tillögur starfshóps um nálgun stjórnvalda í málefnum gervigreindar</div><h1>Gervigreind til góðs</h1><p class="sub">Ísland sem fyrirmynd í nýtingu gervigreindar til góðs fyrir samfélagið allt</p><p class="authors"><span>Hjálmar Gíslason</span><span>Anna Kristín Tumadóttir</span><span>Ari Kristinn Jónsson</span><span>Halldór Fannar Guðjónsson</span><span>Lilja Dögg Jónsdóttir</span></p></div><img class="horizon" src="images/cover-horizon.png" alt=""></div></div></div></article>
@@ -919,6 +922,7 @@
 <nav class="ctl-nav" aria-label="Stýringar">
 <div class="hover-zone"></div>
 <div class="ctl ctl-center"><a class="pill" id="ctl-read" href="#">Lesa nánar ↓</a></div>
+<div class="ctl ctl-top"><a class="pill lang" id="ctl-lang" href="en/" hreflang="en" lang="en"><span class="lang-long">English summary</span><span class="lang-short">English</span></a></div>
 <div class="ctl ctl-right">
   <span class="count quiet" id="count"></span>
   <button class="round quiet" id="btn-toc" aria-label="Efnisyfirlit" title="Efnisyfirlit (Shift+E)">☰</button>
@@ -1095,5 +1099,7 @@
   }, true);
 })();
 </script>
+<style>.ctl-top{top:22px;right:22px;bottom:auto}.ctl .lang{height:40px;font-size:13px}.ctl .lang-short{display:none}body.present .ctl .lang{display:none}body.mobile .ctl-top{position:absolute;top:12px;right:12px}body:not(.present):not(.mobile) .slide--chart{padding-top:var(--langpad,22px)}@media (max-width:699px){.ctl .lang-long{display:none}.ctl .lang-short{display:inline}.ctl .lang{padding:0 14px}}</style>
+<script>(function(){var m={"forsida": "forsida", "umbodid": "umbodid", "leidarljos": "leidarljos", "meginreglur": "meginreglur", "utkomur": "utkomur", "stofnanafyrirkomulag": "stofnanafyrirkomulag", "stofnanafyrirkomulag-skipuritid": "stofnanafyrirkomulag-org-chart", "fyrstu-skref": "fyrstu-skref", "vidfangsefnin": "in-the-full-report", "lok": "lok", "um-tillogurnar": "utkomur", "kafli-1": "utkomur", "kafli-3": "utkomur", "kafli-7": "utkomur", "samfelag-1": "in-the-full-report", "samfelag-2": "in-the-full-report", "vidfangsefnin-utan": "in-the-full-report", "kafli-2": "in-the-full-report", "kafli-4": "in-the-full-report", "kafli-5": "in-the-full-report", "kafli-6": "in-the-full-report", "kafli-8": "in-the-full-report"},a=document.getElementById('ctl-lang');function u(){var id=decodeURIComponent(location.hash.slice(1)).split('/')[0];a.parentNode.style.display=(id&&id!=='forsida')?'none':'';a.href='en/'+(m[id]&&m[id]!=='forsida'?'#'+m[id]:'');}window.addEventListener('hashchange',u);u();function pad(){var s=document.querySelector('.stage');if(!s)return;var k=new DOMMatrix(getComputedStyle(s).transform).a||1;document.documentElement.style.setProperty('--langpad',Math.round(74/k)+'px');}window.addEventListener('resize',function(){setTimeout(pad,50);});window.addEventListener('load',pad);setTimeout(pad,300);})();</script>
 </body>
 </html>
