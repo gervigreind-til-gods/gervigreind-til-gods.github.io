@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1268 916" width="1268" height="916" font-family="'Open Sans', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-label="Stofnanafyrirkomulag gervigreindarmála">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1B4F8A"/></marker></defs>
+<rect x="374" y="30" width="520" height="190" rx="10" fill="#E7ECF3" stroke="#10243E" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="634" y="56" font-size="16" font-weight="700" fill="#10243E" text-anchor="middle">Ráðherranefnd um gervigreind</text>
+<text x="634" y="76" font-size="12" font-weight="400" fill="#10243E" text-anchor="middle">forsætisráðherra (formaður), fjármála- og efnahagsráðherra,</text>
+<text x="634" y="93" font-size="12" font-weight="400" fill="#10243E" text-anchor="middle">menningar-, nýsköpunar- og háskólaráðherra · aðrir eftir málum · að minnsta kosti þrjú ár</text>
+<rect x="484" y="122" width="300" height="78" rx="6" fill="#10243E" stroke="#10243E" stroke-width="1.5"/>
+<text x="634" y="152" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Forsætisráðuneytið</text>
+<text x="634" y="174" font-size="13" font-weight="400" fill="#FFFFFF" text-anchor="middle">samhæfing, heildarstefna og eftirfylgni</text>
+<rect x="1002" y="30" width="236" height="190" rx="10" fill="#FFFFFF" stroke="#1B4F8A" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="1120" y="58" font-size="16" font-weight="700" fill="#1B4F8A" text-anchor="middle">Gervigreindarráð</text>
+<text x="1120" y="80" font-size="12" font-weight="400" fill="#10243E" text-anchor="middle">fimm sérfræðingar,</text>
+<text x="1120" y="97" font-size="12" font-weight="400" fill="#10243E" text-anchor="middle">þar á meðal erlendir,</text>
+<text x="1120" y="114" font-size="12" font-weight="400" fill="#10243E" text-anchor="middle">skipaðir af forsætisráðherra,</text>
+<text x="1120" y="131" font-size="12" font-weight="400" fill="#10243E" text-anchor="middle">með frumkvæðisrétt.</text>
+<text x="1120" y="156" font-size="12" font-weight="400" fill="#10243E" text-anchor="middle">„Staða og framtíð gervigreindar“</text>
+<text x="1120" y="173" font-size="12" font-weight="400" fill="#10243E" text-anchor="middle">gefin út tvisvar á ári</text>
+<text x="1120" y="192" font-size="11" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">umsjón: Miðstöð gervigreindar og máltækni</text>
+<line x1="1002" y1="85" x2="898" y2="85" stroke="#1B4F8A" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+<text x="948" y="78" font-size="12" font-weight="600" fill="#1B4F8A" text-anchor="middle">ráðgjöf</text>
+<line x1="894" y1="125" x2="998" y2="125" stroke="#1B4F8A" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+<text x="948" y="142" font-size="12" font-weight="600" fill="#1B4F8A" text-anchor="middle">svarskylda</text>
+<line x1="634" y1="220" x2="634" y2="260" stroke="#10243E" stroke-width="1.5"/>
+<rect x="30" y="260" width="1208" height="64" rx="6" fill="#E7ECF3" stroke="#10243E" stroke-width="1.5"/>
+<text x="634" y="286" font-size="15" font-weight="700" fill="#10243E" text-anchor="middle">Stýrihópur ráðuneyta</text>
+<text x="634" y="306" font-size="12" font-weight="400" fill="#10243E" text-anchor="middle">fulltrúi frá hverju ráðuneyti · forsætisráðuneytið stýrir · vinnuarmur ráðherranefndarinnar</text>
+<line x1="106" y1="346" x2="1162" y2="346" stroke="#10243E" stroke-width="1.5"/>
+<line x1="634" y1="324" x2="634" y2="346" stroke="#10243E" stroke-width="1.5"/>
+<line x1="106" y1="346" x2="106" y2="629" stroke="#10243E" stroke-width="1.5"/>
+<rect x="30" y="629" width="152" height="235" rx="6" fill="#FFFFFF" stroke="#D8D3C4" stroke-width="1.5"/>
+<text x="106" y="653" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">Mennta- og</text>
+<text x="106" y="670" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">barnamála-</text>
+<text x="106" y="687" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">ráðuneytið</text>
+<text x="106" y="710" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">menntun</text>
+<text x="106" y="727" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">og færni</text>
+<text x="106" y="767" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">Miðstöð menntunar</text>
+<text x="106" y="784" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">og skólaþjónustu</text>
+<line x1="200" y1="346" x2="200" y2="368" stroke="#10243E" stroke-width="1.5"/>
+<rect x="124" y="368" width="152" height="235" rx="6" fill="#FFFFFF" stroke="#D8D3C4" stroke-width="1.5"/>
+<text x="200" y="392" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">Félags- og</text>
+<text x="200" y="409" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">húsnæðismála-</text>
+<text x="200" y="426" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">ráðuneytið</text>
+<text x="200" y="449" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">vinnumarkaður,</text>
+<text x="200" y="466" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">fasteignaskrá</text>
+<text x="200" y="506" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">Vinnumálastofnun,</text>
+<text x="200" y="523" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">HMS</text>
+<line x1="294" y1="346" x2="294" y2="629" stroke="#10243E" stroke-width="1.5"/>
+<rect x="218" y="629" width="152" height="235" rx="6" fill="#FFFFFF" stroke="#D8D3C4" stroke-width="1.5"/>
+<text x="294" y="653" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">Heilbrigðis-</text>
+<text x="294" y="670" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">ráðuneytið</text>
+<text x="294" y="693" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">heilbrigðis-</text>
+<text x="294" y="710" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">þjónusta</text>
+<text x="294" y="750" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">Stafræn heilsa,</text>
+<text x="294" y="767" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">Embætti landlæknis</text>
+<line x1="388" y1="346" x2="388" y2="368" stroke="#10243E" stroke-width="1.5"/>
+<rect x="312" y="368" width="152" height="235" rx="6" fill="#FFFFFF" stroke="#D8D3C4" stroke-width="1.5"/>
+<text x="388" y="392" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">Dómsmála-</text>
+<text x="388" y="409" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">ráðuneytið</text>
+<text x="388" y="432" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">persónuvernd,</text>
+<text x="388" y="449" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">löggæsla,</text>
+<text x="388" y="466" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">þjóðskrá</text>
+<text x="388" y="506" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">Persónuvernd,</text>
+<text x="388" y="523" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">Þjóðskrá</text>
+<line x1="552" y1="346" x2="552" y2="368" stroke="#10243E" stroke-width="1.5"/>
+<rect x="476" y="368" width="152" height="235" rx="6" fill="#1B4F8A" stroke="#1B4F8A" stroke-width="2.5"/>
+<text x="552" y="392" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Fjármála- og</text>
+<text x="552" y="409" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">efnahags-</text>
+<text x="552" y="426" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">ráðuneytið</text>
+<rect x="482" y="455" width="140" height="20" rx="6" fill="#E7ECF3" stroke="#E7ECF3" stroke-width="1"/>
+<text x="552" y="469" font-size="11.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">framkvæmir og rekur</text>
+<text x="552" y="495" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle">UT ríkisins inn á við</text>
+<text x="552" y="512" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle">og Ísland.is:</text>
+<text x="552" y="529" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle">framkvæmd,</text>
+<text x="552" y="546" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle">innleiðing</text>
+<text x="552" y="563" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle">og rekstur</text>
+<line x1="552" y1="603" x2="552" y2="633" stroke="#1B4F8A" stroke-width="2"/>
+<rect x="476" y="633" width="152" height="166" rx="6" fill="#E7ECF3" stroke="#1B4F8A" stroke-width="2"/>
+<text x="552" y="655" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">„Stafrænt Ísland“</text>
+<text x="552" y="678" font-size="11.5" font-weight="400" fill="#10243E" text-anchor="middle">sameinar núverandi</text>
+<text x="552" y="695" font-size="11.5" font-weight="400" fill="#10243E" text-anchor="middle">Stafrænt Ísland,</text>
+<text x="552" y="712" font-size="11.5" font-weight="400" fill="#10243E" text-anchor="middle">UT-hluta Umbru o.fl.,</text>
+<text x="552" y="729" font-size="11.5" font-weight="400" fill="#10243E" text-anchor="middle">innleiðingarhópur</text>
+<text x="552" y="746" font-size="11.5" font-weight="400" fill="#10243E" text-anchor="middle">gervigreindar,</text>
+<text x="552" y="763" font-size="11.5" font-weight="400" fill="#10243E" text-anchor="middle">rekstur mállíkans</text>
+<line x1="716" y1="346" x2="716" y2="368" stroke="#10243E" stroke-width="1.5"/>
+<rect x="640" y="368" width="152" height="235" rx="6" fill="#1B4F8A" stroke="#1B4F8A" stroke-width="2.5"/>
+<text x="716" y="392" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Menningar-,</text>
+<text x="716" y="409" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">nýsköpunar- og</text>
+<text x="716" y="426" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">háskóla-</text>
+<text x="716" y="443" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">ráðuneytið</text>
+<rect x="646" y="455" width="140" height="20" rx="6" fill="#E7ECF3" stroke="#E7ECF3" stroke-width="1"/>
+<text x="716" y="469" font-size="11.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">gervigreindarstefnan</text>
+<text x="716" y="495" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle">stefnumótun og</text>
+<text x="716" y="512" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle">aðgerðaáætlun,</text>
+<text x="716" y="529" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle">máltækni, rannsóknir,</text>
+<text x="716" y="546" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle">nýsköpun, fjölmiðlar,</text>
+<text x="716" y="563" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle">endurnot gagna,</text>
+<text x="716" y="580" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle">AI Act, alþjóðasamstarf</text>
+<line x1="716" y1="603" x2="716" y2="633" stroke="#1B4F8A" stroke-width="2"/>
+<rect x="640" y="633" width="152" height="166" rx="6" fill="#E7ECF3" stroke="#1B4F8A" stroke-width="2"/>
+<text x="716" y="655" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">Miðstöð</text>
+<text x="716" y="672" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">gervigreindar</text>
+<text x="716" y="689" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">og máltækni</text>
+<text x="716" y="712" font-size="11.5" font-weight="400" fill="#10243E" text-anchor="middle">greining á stöðu</text>
+<text x="716" y="729" font-size="11.5" font-weight="400" fill="#10243E" text-anchor="middle">gervigreindar,</text>
+<text x="716" y="746" font-size="11.5" font-weight="400" fill="#10243E" text-anchor="middle">umsjón máltæknistyrkja,</text>
+<text x="716" y="763" font-size="11.5" font-weight="400" fill="#10243E" text-anchor="middle">alþjóðlegt samstarf,</text>
+<text x="716" y="780" font-size="11.5" font-weight="400" fill="#10243E" text-anchor="middle">útgáfa „Stöðu og framtíðar“</text>
+<line x1="880" y1="346" x2="880" y2="368" stroke="#10243E" stroke-width="1.5"/>
+<rect x="804" y="368" width="152" height="235" rx="6" fill="#FFFFFF" stroke="#D8D3C4" stroke-width="1.5"/>
+<text x="880" y="392" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">Innviða-</text>
+<text x="880" y="409" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">ráðuneytið</text>
+<text x="880" y="432" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">fjarskipti,</text>
+<text x="880" y="449" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">netöryggi, rafræn</text>
+<text x="880" y="466" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">auðkenning, AI Act,</text>
+<text x="880" y="483" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">sveitarfélög,</text>
+<text x="880" y="500" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">samgöngutækjaskrár</text>
+<text x="880" y="540" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">Fjarskiptastofa,</text>
+<text x="880" y="557" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">Samgöngustofa</text>
+<line x1="974" y1="346" x2="974" y2="629" stroke="#10243E" stroke-width="1.5"/>
+<rect x="898" y="629" width="152" height="235" rx="6" fill="#FFFFFF" stroke="#D8D3C4" stroke-width="1.5"/>
+<text x="974" y="653" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">Utanríkis-</text>
+<text x="974" y="670" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">ráðuneytið</text>
+<text x="974" y="693" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">varnar- og</text>
+<text x="974" y="710" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">öryggismál,</text>
+<text x="974" y="727" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">netvarnir</text>
+<text x="974" y="767" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">CERT-IS</text>
+<line x1="1068" y1="346" x2="1068" y2="368" stroke="#10243E" stroke-width="1.5"/>
+<rect x="992" y="368" width="152" height="235" rx="6" fill="#FFFFFF" stroke="#D8D3C4" stroke-width="1.5"/>
+<text x="1068" y="392" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">Atvinnuvega-</text>
+<text x="1068" y="409" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">ráðuneytið</text>
+<text x="1068" y="432" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">atvinnulífið,</text>
+<text x="1068" y="449" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">staðlar, samkeppni,</text>
+<text x="1068" y="466" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">neytendamál,</text>
+<text x="1068" y="483" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">fyrirtækjaskrá</text>
+<text x="1068" y="523" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">Staðlaráð Íslands,</text>
+<text x="1068" y="540" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">Samkeppniseftirlitið,</text>
+<text x="1068" y="557" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">Neytendastofa</text>
+<line x1="1162" y1="346" x2="1162" y2="629" stroke="#10243E" stroke-width="1.5"/>
+<rect x="1086" y="629" width="152" height="235" rx="6" fill="#FFFFFF" stroke="#D8D3C4" stroke-width="1.5"/>
+<text x="1162" y="653" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">Umhverfis-,</text>
+<text x="1162" y="670" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">orku- og</text>
+<text x="1162" y="687" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">loftslags-</text>
+<text x="1162" y="704" font-size="13" font-weight="700" fill="#10243E" text-anchor="middle">ráðuneytið</text>
+<text x="1162" y="727" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">orka,</text>
+<text x="1162" y="744" font-size="12" font-weight="400" fill="#3E4F66" text-anchor="middle">landupplýsingar</text>
+<text x="1162" y="784" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">Umhverfis- og</text>
+<text x="1162" y="801" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">orkustofnun,</text>
+<text x="1162" y="818" font-size="11.5" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">Náttúrufræðistofnun</text>
+<text x="30" y="890" font-size="11.5" font-weight="400" fill="#5C6B80" text-anchor="start" font-style="italic">Myndin sýnir helstu einingar og málaflokka sem snerta gervigreind. Hún er ekki tæmandi.</text>
+</svg>

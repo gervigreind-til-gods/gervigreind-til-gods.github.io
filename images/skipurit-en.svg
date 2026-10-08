@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 792" width="1200" height="792" font-family="'Open Sans', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-label="Proposed institutional arrangement for AI in Iceland">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1B4F8A"/></marker></defs>
+<rect x="195" y="30" width="540" height="196" rx="10" fill="#E7ECF3" stroke="#10243E" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="465" y="56" font-size="16" font-weight="700" fill="#10243E" text-anchor="middle">Ministerial Committee on AI</text>
+<text x="465" y="76" font-size="13.5" font-weight="400" fill="#10243E" text-anchor="middle">Prime Minister (chair), Minister of Finance, minister responsible for AI</text>
+<text x="465" y="96" font-size="13.5" font-weight="400" fill="#10243E" text-anchor="middle">other ministers as needed · for at least three years</text>
+<rect x="305" y="134" width="320" height="74" rx="6" fill="#10243E" stroke="#10243E" stroke-width="1.5"/>
+<text x="465" y="163" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Prime Minister's Office</text>
+<text x="465" y="184" font-size="13" font-weight="400" fill="#FFFFFF" text-anchor="middle">coordination, overall strategy and follow-up</text>
+<rect x="860" y="30" width="310" height="196" rx="10" fill="#FFFFFF" stroke="#1B4F8A" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="1015" y="58" font-size="16" font-weight="700" fill="#1B4F8A" text-anchor="middle">Independent AI Council</text>
+<text x="1015" y="82" font-size="13.5" font-weight="400" fill="#10243E" text-anchor="middle">five leading experts, some international,</text>
+<text x="1015" y="102" font-size="13.5" font-weight="400" fill="#10243E" text-anchor="middle">appointed by the Prime Minister</text>
+<text x="1015" y="122" font-size="13.5" font-weight="400" fill="#10243E" text-anchor="middle">can take up issues on its own initiative</text>
+<text x="1015" y="142" font-size="13.5" font-weight="400" fill="#10243E" text-anchor="middle">public assessment of the technology</text>
+<text x="1015" y="162" font-size="13.5" font-weight="400" fill="#10243E" text-anchor="middle">and of progress, twice a year</text>
+<line x1="860" y1="100" x2="739" y2="100" stroke="#1B4F8A" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+<text x="797" y="92" font-size="13.5" font-weight="600" fill="#1B4F8A" text-anchor="middle">advice</text>
+<line x1="735" y1="150" x2="856" y2="150" stroke="#1B4F8A" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+<text x="797" y="170" font-size="13.5" font-weight="600" fill="#1B4F8A" text-anchor="middle">duty to respond</text>
+<line x1="465" y1="226" x2="465" y2="262" stroke="#10243E" stroke-width="1.5"/>
+<rect x="29" y="262" width="872" height="62" rx="6" fill="#F4F1EA" stroke="#10243E" stroke-width="1.5"/>
+<text x="465" y="288" font-size="15" font-weight="700" fill="#10243E" text-anchor="middle">Steering group of all ministries</text>
+<text x="465" y="308" font-size="13.5" font-weight="400" fill="#10243E" text-anchor="middle">one representative per ministry · chaired by the Prime Minister's Office · the committee's working arm</text>
+<line x1="132" y1="344" x2="798" y2="344" stroke="#10243E" stroke-width="1.5"/>
+<line x1="465" y1="324" x2="465" y2="344" stroke="#10243E" stroke-width="1.5"/>
+<line x1="132" y1="344" x2="132" y2="366" stroke="#10243E" stroke-width="1.5"/>
+<rect x="29" y="366" width="206" height="196" rx="6" fill="#FFFFFF" stroke="#D8D3C4" stroke-width="1.5"/>
+<text x="132" y="392" font-size="15" font-weight="700" fill="#10243E" text-anchor="middle">Line ministries</text>
+<text x="132" y="420" font-size="13.5" font-weight="400" fill="#3E4F66" text-anchor="middle">education and skills</text>
+<text x="132" y="440" font-size="13.5" font-weight="400" fill="#3E4F66" text-anchor="middle">labour market</text>
+<text x="132" y="460" font-size="13.5" font-weight="400" fill="#3E4F66" text-anchor="middle">health</text>
+<text x="132" y="480" font-size="13.5" font-weight="400" fill="#3E4F66" text-anchor="middle">justice and data protection</text>
+<text x="132" y="512" font-size="13" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">each owns AI's impact</text>
+<text x="132" y="532" font-size="13" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">in its own field</text>
+<line x1="354" y1="344" x2="354" y2="366" stroke="#10243E" stroke-width="1.5"/>
+<rect x="251" y="366" width="206" height="196" rx="6" fill="#1B4F8A" stroke="#1B4F8A" stroke-width="2.5"/>
+<text x="354" y="392" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Ministry of Finance</text>
+<rect x="274" y="424" width="160" height="22" rx="6" fill="#E7ECF3" stroke="#E7ECF3" stroke-width="1"/>
+<text x="354" y="439" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">implements and operates</text>
+<text x="354" y="470" font-size="13.5" font-weight="400" fill="#FFFFFF" text-anchor="middle">government IT:</text>
+<text x="354" y="490" font-size="13.5" font-weight="400" fill="#FFFFFF" text-anchor="middle">core systems, operations</text>
+<text x="354" y="510" font-size="13.5" font-weight="400" fill="#FFFFFF" text-anchor="middle">and implementation</text>
+<line x1="354" y1="562" x2="354" y2="590" stroke="#1B4F8A" stroke-width="2"/>
+<rect x="251" y="590" width="206" height="172" rx="6" fill="#E7ECF3" stroke="#1B4F8A" stroke-width="2"/>
+<text x="354" y="614" font-size="14.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">“Digital Iceland”</text>
+<text x="354" y="640" font-size="13" font-weight="400" fill="#10243E" text-anchor="middle">one unit with a clear mandate</text>
+<text x="354" y="660" font-size="13" font-weight="400" fill="#10243E" text-anchor="middle">shared infrastructure</text>
+<text x="354" y="680" font-size="13" font-weight="400" fill="#10243E" text-anchor="middle">AI implementation team</text>
+<text x="354" y="700" font-size="13" font-weight="400" fill="#10243E" text-anchor="middle">runs the government's</text>
+<text x="354" y="720" font-size="13" font-weight="400" fill="#10243E" text-anchor="middle">language model</text>
+<line x1="576" y1="344" x2="576" y2="366" stroke="#10243E" stroke-width="1.5"/>
+<rect x="473" y="366" width="206" height="196" rx="6" fill="#1B4F8A" stroke="#1B4F8A" stroke-width="2.5"/>
+<text x="576" y="392" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Ministry responsible</text>
+<text x="576" y="412" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">for AI</text>
+<rect x="496" y="424" width="160" height="22" rx="6" fill="#E7ECF3" stroke="#E7ECF3" stroke-width="1"/>
+<text x="576" y="439" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">writes the AI strategy</text>
+<text x="576" y="470" font-size="13.5" font-weight="400" fill="#FFFFFF" text-anchor="middle">AI strategy and action plan,</text>
+<text x="576" y="490" font-size="13.5" font-weight="400" fill="#FFFFFF" text-anchor="middle">language technology,</text>
+<text x="576" y="510" font-size="13.5" font-weight="400" fill="#FFFFFF" text-anchor="middle">research and innovation,</text>
+<text x="576" y="530" font-size="13.5" font-weight="400" fill="#FFFFFF" text-anchor="middle">EU AI Act, international work</text>
+<line x1="576" y1="562" x2="576" y2="590" stroke="#1B4F8A" stroke-width="2"/>
+<rect x="473" y="590" width="206" height="172" rx="6" fill="#E7ECF3" stroke="#1B4F8A" stroke-width="2"/>
+<text x="576" y="614" font-size="14.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">Centre for AI and</text>
+<text x="576" y="634" font-size="14.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">Language Technology</text>
+<text x="576" y="660" font-size="13" font-weight="400" fill="#10243E" text-anchor="middle">monitors AI adoption</text>
+<text x="576" y="680" font-size="13" font-weight="400" fill="#10243E" text-anchor="middle">language technology grants</text>
+<text x="576" y="700" font-size="13" font-weight="400" fill="#10243E" text-anchor="middle">serves the AI Council</text>
+<text x="576" y="720" font-size="13" font-weight="400" fill="#10243E" text-anchor="middle">and publishes its</text>
+<text x="576" y="740" font-size="13" font-weight="400" fill="#10243E" text-anchor="middle">assessments</text>
+<line x1="798" y1="344" x2="798" y2="366" stroke="#10243E" stroke-width="1.5"/>
+<rect x="695" y="366" width="206" height="196" rx="6" fill="#FFFFFF" stroke="#D8D3C4" stroke-width="1.5"/>
+<text x="798" y="392" font-size="15" font-weight="700" fill="#10243E" text-anchor="middle">Line ministries</text>
+<text x="798" y="420" font-size="13.5" font-weight="400" fill="#3E4F66" text-anchor="middle">telecoms and cybersecurity</text>
+<text x="798" y="440" font-size="13.5" font-weight="400" fill="#3E4F66" text-anchor="middle">defence and security</text>
+<text x="798" y="460" font-size="13.5" font-weight="400" fill="#3E4F66" text-anchor="middle">industry and competition</text>
+<text x="798" y="480" font-size="13.5" font-weight="400" fill="#3E4F66" text-anchor="middle">energy</text>
+<text x="798" y="512" font-size="13" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">each owns AI's impact</text>
+<text x="798" y="532" font-size="13" font-weight="400" fill="#1B4F8A" text-anchor="middle" font-style="italic">in its own field</text>
+</svg>
